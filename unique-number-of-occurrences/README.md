@@ -1,3 +1,4 @@
+[Discussion Post (created on 29/4/2021 at 1:44)](https://leetcode.com/problems/unique-number-of-occurrences/discuss/1236997/C%2B%2Bor-EASY-TO-UNDERSTANDor-fast-approach-using-Hash-tables)  
 <h2>1207. Unique Number of Occurrences</h2><h3>Easy</h3><hr><div><p>Given an array of integers <code>arr</code>,&nbsp;write a function that returns <code>true</code> if and only if the number of occurrences of each value in the array is unique.</p>
 
 <p>&nbsp;</p>
