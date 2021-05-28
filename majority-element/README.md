@@ -1,3 +1,4 @@
+[Discussion Post (created on 28/4/2021 at 23:40)](https://leetcode.com/problems/majority-element/discuss/1236808/C%2B%2Bor-EASY-TO-UNDERSTAND)  
 <h2>169. Majority Element</h2><h3>Easy</h3><hr><div><p>Given an array <code>nums</code> of size <code>n</code>, return <em>the majority element</em>.</p>
 
 <p>The majority element is the element that appears more than <code>⌊n / 2⌋</code> times. You may assume that the majority element always exists in the array.</p>
