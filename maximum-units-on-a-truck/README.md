@@ -1,3 +1,4 @@
+[Discussion Post (created on 29/4/2021 at 21:42)](https://leetcode.com/problems/maximum-units-on-a-truck/discuss/1238783/C%2B%2BorEASY-TO-UNDERSTAND-or-USING-comparator-function)  
 <h2>1710. Maximum Units on a Truck</h2><h3>Easy</h3><hr><div><p>You are assigned to put some amount of boxes onto <strong>one truck</strong>. You are given a 2D array <code>boxTypes</code>, where <code>boxTypes[i] = [numberOfBoxes<sub>i</sub>, numberOfUnitsPerBox<sub>i</sub>]</code>:</p>
 
 <ul>
