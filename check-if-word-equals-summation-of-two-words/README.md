@@ -1,3 +1,4 @@
+[Discussion Post (created on 3/5/2021 at 4:21)](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/discuss/1247997/C%2B%2Bor-EASY-TO-UNDERSTAND-or-straight-forward-code-solution)  
 <h2>1880. Check if Word Equals Summation of Two Words</h2><h3>Easy</h3><hr><div><p>The <strong>letter value</strong> of a letter is its position in the alphabet <strong>starting from 0</strong> (i.e. <code>'a' -&gt; 0</code>, <code>'b' -&gt; 1</code>, <code>'c' -&gt; 2</code>, etc.).</p>
 
 <p>The <strong>numerical value</strong> of some string of lowercase English letters <code>s</code> is the <strong>concatenation</strong> of the <strong>letter values</strong> of each letter in <code>s</code>, which is then <strong>converted</strong> into an integer.</p>
