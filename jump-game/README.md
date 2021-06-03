@@ -1,3 +1,4 @@
+[Discussion Post (created on 4/5/2021 at 2:42)](https://leetcode.com/problems/jump-game/discuss/1249872/C%2B%2Bor-EASY-TO-UNDERSTANDor-fast-code)  
 <h2>55. Jump Game</h2><h3>Medium</h3><hr><div><p>Given an array of non-negative integers <code>nums</code>, you are initially positioned at the <strong>first index</strong> of the array.</p>
 
 <p>Each element in the array represents your maximum jump length at that position.</p>
