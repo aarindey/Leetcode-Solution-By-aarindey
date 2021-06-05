@@ -3,7 +3,7 @@ public:
     int countPrimeSetBits(int left, int right) {
         int num;
         int count,c=0;
-         while(left!=(right+1))         
+         while(left<(right+1))         
         {
             count=0;
             num=left;
