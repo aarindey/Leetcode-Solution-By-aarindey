@@ -1,3 +1,4 @@
+[Discussion Post (created on 5/5/2021 at 23:26)](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/discuss/1253250/C%2B%2Bor-EASY-TO-UNDERSTANDor-fast-and-efficient-or-Intuitive-approach)  
 <h2>762. Prime Number of Set Bits in Binary Representation</h2><h3>Easy</h3><hr><div><p>Given two integers <code>left</code> and <code>right</code>, find the count of numbers in the range <code>[left, right]</code> (inclusive) having a prime number of set bits in their binary representation.</p>
 
 <p>(Recall that the number of set bits an integer has is the number of <code>1</code>s present when written in binary. For example, <code>21</code> written in binary is <code>10101</code> which has 3 set bits. Also, 1 is not a prime.)</p>
