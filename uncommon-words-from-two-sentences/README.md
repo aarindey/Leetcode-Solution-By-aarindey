@@ -1,3 +1,4 @@
+[Discussion Post (created on 9/5/2021 at 0:46)](https://leetcode.com/problems/uncommon-words-from-two-sentences/discuss/1259758/C%2B%2Bor-EASY-TO-UNDERSTAND-or-FAST-AND-EFFICIENT-CODE)  
 <h2>884. Uncommon Words from Two Sentences</h2><h3>Easy</h3><hr><div><p>A <strong>sentence</strong> is a string of single-space separated words where each word consists only of lowercase letters.</p>
 
 <p>A word is <strong>uncommon</strong> if it appears exactly once in one of the sentences, and <strong>does not appear</strong> in the other sentence.</p>
