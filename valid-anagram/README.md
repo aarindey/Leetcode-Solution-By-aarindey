@@ -1,3 +1,4 @@
+[Discussion Post (created on 9/5/2021 at 2:21)](https://leetcode.com/problems/valid-anagram/discuss/1259902/C%2B%2Bor-EASY-TO-UNDERSTAND-or-efficient-and-fast-code-or-using-hashtables)  
 <h2>242. Valid Anagram</h2><h3>Easy</h3><hr><div><p>Given two strings <code>s</code> and <code>t</code>, return <code>true</code> <em>if</em> <code>t</code> <em>is an anagram of</em> <code>s</code><em>, and</em> <code>false</code> <em>otherwise</em>.</p>
 
 <p>&nbsp;</p>
