@@ -1,3 +1,4 @@
+[Discussion Post (created on 13/5/2021 at 3:40)](https://leetcode.com/problems/happy-number/discuss/1268211/C%2B%2Bor-100-faster-or-EASY-TO-UNDERSTAND-or-simple-code)  
 <h2>202. Happy Number</h2><h3>Easy</h3><hr><div><p>Write an algorithm to determine if a number <code>n</code> is happy.</p>
 
 <p>A <strong>happy number</strong> is a number defined by the following process:</p>
