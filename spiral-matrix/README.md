@@ -1,3 +1,4 @@
+[Discussion Post (created on 14/5/2021 at 0:40)](https://leetcode.com/problems/spiral-matrix/discuss/1270389/C%2B%2Bor-100-fasteror-EASY-TO-UNDERSTAND-or-O(1)-space-complexityor-clean-efficient-code)  
 <h2>54. Spiral Matrix</h2><h3>Medium</h3><hr><div><p>Given an <code>m x n</code> <code>matrix</code>, return <em>all elements of the</em> <code>matrix</code> <em>in spiral order</em>.</p>
 
 <p>&nbsp;</p>
