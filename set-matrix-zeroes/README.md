@@ -1,3 +1,4 @@
+[Discussion Post (created on 14/5/2021 at 2:18)](https://leetcode.com/problems/set-matrix-zeroes/discuss/1270535/C%2B%2Bor-O(1)-space-complexityor-EASY-TO-UNDERSTAND-or-efficient-solution)  
 <h2>73. Set Matrix Zeroes</h2><h3>Medium</h3><hr><div><p>Given an&nbsp;<code><em>m</em> x <em>n</em></code> matrix. If an element is <strong>0</strong>, set its entire row and column to <strong>0</strong>. Do it <a href="https://en.wikipedia.org/wiki/In-place_algorithm" target="_blank"><strong>in-place</strong></a>.</p>
 
 <p><strong>Follow up:</strong></p>
