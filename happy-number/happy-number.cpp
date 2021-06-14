@@ -12,7 +12,7 @@ public:
               n=n/10;
           }
             n=num;
-            if(c==40)
+            if(c==1000)
               return false;  
       }
         return true;
