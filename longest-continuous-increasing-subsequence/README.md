@@ -1,3 +1,4 @@
+[Discussion Post (created on 16/5/2021 at 1:29)](https://leetcode.com/problems/longest-continuous-increasing-subsequence/discuss/1275154/C%2B%2Bor-92-fasteror-EAST-TO-UNDERSTAND-or-fast-and-efficient-code)  
 <h2>674. Longest Continuous Increasing Subsequence</h2><h3>Easy</h3><hr><div><p>Given an unsorted array of integers <code>nums</code>, return <em>the length of the longest <strong>continuous increasing subsequence</strong> (i.e. subarray)</em>. The subsequence must be <strong>strictly</strong> increasing.</p>
 
 <p>A <strong>continuous increasing subsequence</strong> is defined by two indices <code>l</code> and <code>r</code> (<code>l &lt; r</code>) such that it is <code>[nums[l], nums[l + 1], ..., nums[r - 1], nums[r]]</code> and for each <code>l &lt;= i &lt; r</code>, <code>nums[i] &lt; nums[i + 1]</code>.</p>
