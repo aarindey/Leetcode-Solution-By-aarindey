@@ -1,3 +1,4 @@
+[Discussion Post (created on 17/5/2021 at 2:2)](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/discuss/1277550/C%2B%2Bor-EASY-TO-UNDERSTANDor-fast-and-efficient-or-clean-code)  
 <h2>914. X of a Kind in a Deck of Cards</h2><h3>Easy</h3><hr><div><p>In a deck of cards, each card has an integer written on it.</p>
 
 <p>Return <code>true</code> if and only if you can choose <code>X &gt;= 2</code> such that it is possible to split the entire deck into 1 or more groups of cards, where:</p>
