@@ -1,3 +1,4 @@
+[Discussion Post (created on 17/5/2021 at 1:47)](https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/discuss/1277525/C%2B%2Bor-100-fasteror-EASY-TO-UNDERSTAND-or-fast-clean-and-efficient)  
 <h2>1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence</h2><h3>Easy</h3><hr><div><p>Given a <code>sentence</code>&nbsp;that consists of some words separated by a&nbsp;<strong>single space</strong>, and a <code>searchWord</code>.</p>
 
 <p>You have to check if <code>searchWord</code> is a prefix of any word in <code>sentence</code>.</p>
