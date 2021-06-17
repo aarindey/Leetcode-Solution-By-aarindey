@@ -1,3 +1,4 @@
+[Discussion Post (created on 18/5/2021 at 2:13)](https://leetcode.com/problems/lucky-numbers-in-a-matrix/discuss/1279878/C%2B%2B-or-EASY-TO-UNDERSTAND-or-fast-and-efficient-orIntuitive-approachor-clean)  
 <h2>1380. Lucky Numbers in a Matrix</h2><h3>Easy</h3><hr><div><p>Given a <code>m * n</code> matrix of <strong>distinct </strong>numbers, return all lucky numbers in the&nbsp;matrix in <strong>any </strong>order.</p>
 
 <p>A lucky number is an element of the matrix such that it is the minimum element in its row and maximum in its column.</p>
