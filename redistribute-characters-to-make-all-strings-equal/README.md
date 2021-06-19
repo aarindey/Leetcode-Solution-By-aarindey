@@ -1,3 +1,4 @@
+[Discussion Post (created on 19/5/2021 at 18:52)](https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/discuss/1283163/C%2B%2Bor-EASY-TO-UNDERSTAND-or-fast-and-efficient-or-Intuitive-approach)  
 <h2>1897. Redistribute Characters to Make All Strings Equal</h2><h3>Easy</h3><hr><div><p>You are given an array of strings <code>words</code> (<strong>0-indexed</strong>).</p>
 
 <p>In one operation, pick two <strong>distinct</strong> indices <code>i</code> and <code>j</code>, where <code>words[i]</code> is a non-empty string, and move <strong>any</strong> character from <code>words[i]</code> to <strong>any</strong> position in <code>words[j]</code>.</p>
