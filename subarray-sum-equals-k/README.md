@@ -1,3 +1,4 @@
+[Discussion Post (created on 21/5/2021 at 2:49)](https://leetcode.com/problems/subarray-sum-equals-k/discuss/1286347/C%2B%2B-orEASY-TO-UNDERSTANDor-fast-and-efficient-or-Using-hashtables)  
 <h2>560. Subarray Sum Equals K</h2><h3>Medium</h3><hr><div><p>Given an array of integers <code>nums</code> and an integer <code>k</code>, return <em>the total number of continuous subarrays whose sum equals to <code>k</code></em>.</p>
 
 <p>&nbsp;</p>
