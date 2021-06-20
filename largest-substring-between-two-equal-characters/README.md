@@ -1,3 +1,4 @@
+[Discussion Post (created on 21/5/2021 at 4:9)](https://leetcode.com/problems/largest-substring-between-two-equal-characters/discuss/1286450/C%2B%2Bor-100-fasteror-EASY-TO-UNDERSTAND-or-clean-and-efficientor-linear-Time-complexity)  
 <h2>1624. Largest Substring Between Two Equal Characters</h2><h3>Easy</h3><hr><div><p>Given a string <code>s</code>, return <em>the length of the longest substring between two equal characters, excluding the two characters.</em> If there is no such substring return <code>-1</code>.</p>
 
 <p>A <strong>substring</strong> is a contiguous sequence of characters within a string.</p>
