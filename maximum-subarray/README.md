@@ -1,3 +1,4 @@
+[Discussion Post (created on 21/5/2021 at 1:10)](https://leetcode.com/problems/maximum-subarray/discuss/1286220/C%2B%2Bor-EASY-TO-UNDERSTAND-or-O(n)-time-complexity-solution-using-Kadane's-algorithm)  
 <h2>53. Maximum Subarray</h2><h3>Easy</h3><hr><div><p>Given an integer array <code>nums</code>, find the contiguous subarray (containing at least one number) which has the largest sum and return <em>its sum</em>.</p>
 
 <p>&nbsp;</p>
