@@ -17,7 +17,7 @@ public:
    }
      return s.substr(start,len);   
    }
-    int expandFromCenter(string s,int left,int right)
+    int expandFromCenter(string &s,int left,int right)
     {
         if(s.length()<1||left>right)
          return 0;
