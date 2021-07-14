@@ -1,3 +1,4 @@
+[Discussion Post (created on 15/6/2021 at 4:1)](https://leetcode.com/problems/duplicate-zeros/discuss/1338315/C%2B%2Bor-EASY-TO-UNDERSTAND-orfast-and-efficient)  
 <h2>1089. Duplicate Zeros</h2><h3>Easy</h3><hr><div><p>Given a fixed length&nbsp;array <code>arr</code> of integers, duplicate each occurrence of zero, shifting the remaining elements to the right.</p>
 
 <p>Note that elements beyond the length of the original array are not written.</p>
