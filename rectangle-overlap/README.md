@@ -1,3 +1,4 @@
+[Discussion Post (created on 16/6/2021 at 1:6)](https://leetcode.com/problems/rectangle-overlap/discuss/1340340/C%2B%2Bor-EASY-TO-UNDERSTANDor-100-fasteror-98-space-efficientor)  
 <h2>836. Rectangle Overlap</h2><h3>Easy</h3><hr><div><p>An axis-aligned rectangle is represented as a list <code>[x1, y1, x2, y2]</code>, where <code>(x1, y1)</code> is the coordinate of its bottom-left corner, and <code>(x2, y2)</code> is the coordinate of its top-right corner. Its top and bottom edges are parallel to the X-axis, and its left and right edges are parallel to the Y-axis.</p>
 
 <p>Two rectangles overlap if the area of their intersection is <strong>positive</strong>. To be clear, two rectangles that only touch at the corner or edges do not overlap.</p>
