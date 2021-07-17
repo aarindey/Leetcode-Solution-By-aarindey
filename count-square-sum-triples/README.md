@@ -1,3 +1,4 @@
+[Discussion Post (created on 18/6/2021 at 4:23)](https://leetcode.com/problems/count-square-sum-triples/discuss/1344649/C%2B%2Bor-EASY-TO-UNDERSTANDor-efficient-or-O(n2)-and-O(n3)-time-complexities)  
 <h2>1925. Count Square Sum Triples</h2><h3>Easy</h3><hr><div><p>A <strong>square triple</strong> <code>(a,b,c)</code> is a triple where <code>a</code>, <code>b</code>, and <code>c</code> are <strong>integers</strong> and <code>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></code>.</p>
 
 <p>Given an integer <code>n</code>, return <em>the number of <strong>square triples</strong> such that </em><code>1 &lt;= a, b, c &lt;= n</code>.</p>
