@@ -1,15 +1,16 @@
+//1925. Count Square Sum Triples
 class Solution {
 public:
     int countTriples(int n) {
-       //  int c=0;
+        // int c=0;
        // for(int i=1;i<=n;i++)
        // {
-       //     for(int j=i+1;j<=n-1;j++)
+       //     for(int j=i;j<=n;j++)
        //     {
-       //         for(int k=j+1;k<=n;k++)
+       //         for(int k=j;k<=n;k++)
        //         {
        //          if((i*i+j*j==k*k)||(i*i+k*k==j*j)||(j*j+k*k==i*i))
-       //          c++;    
+       //          c+=2;    
        //         }   
        //     }
        // }
