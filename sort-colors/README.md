@@ -1,3 +1,4 @@
+[Discussion Post (created on 20/6/2021 at 0:50)](https://leetcode.com/problems/sort-colors/discuss/1349109/C%2B%2Bor-All-ways-to-solve-thisor-EASY-TO-UNDERSTANDor100-fasteror2-pointers-or)  
 <h2>75. Sort Colors</h2><h3>Medium</h3><hr><div><p>Given an array <code>nums</code> with <code>n</code> objects colored red, white, or blue, sort them <strong><a href="https://en.wikipedia.org/wiki/In-place_algorithm" target="_blank">in-place</a> </strong>so that objects of the same color are adjacent, with the colors in the order red, white, and blue.</p>
 
 <p>We will use the integers <code>0</code>, <code>1</code>, and <code>2</code> to represent the color red, white, and blue, respectively.</p>
