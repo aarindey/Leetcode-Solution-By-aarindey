@@ -1,3 +1,4 @@
+[Discussion Post (created on 20/6/2021 at 18:43)](https://leetcode.com/problems/string-to-integer-atoi/discuss/1350585/C%2B%2Bor-EASY-TO-UNDERSTAND-or-fast-and-efficient-code)  
 <h2>8. String to Integer (atoi)</h2><h3>Medium</h3><hr><div><p>Implement the <code>myAtoi(string s)</code> function, which converts a string to a 32-bit signed integer (similar to C/C++'s <code>atoi</code> function).</p>
 
 <p>The algorithm for <code>myAtoi(string s)</code> is as follows:</p>
