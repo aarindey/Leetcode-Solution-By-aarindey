@@ -1,3 +1,4 @@
+[Discussion Post (created on 20/6/2021 at 23:36)](https://leetcode.com/problems/groups-of-special-equivalent-strings/discuss/1351193/C%2B%2Bor-EASY-TO-UNDERSTAND-or-fast-and-efficient-approachor)  
 <h2>893. Groups of Special-Equivalent Strings</h2><h3>Easy</h3><hr><div><p>You are given an array <code>words</code> of strings.</p>
 
 <p>A <em>move&nbsp;onto </em><code>s</code> consists of swapping any two even indexed characters of <code>s</code>, or any two odd indexed characters of <code>s</code>.</p>
