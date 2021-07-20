@@ -1,3 +1,4 @@
+[Discussion Post (created on 20/6/2021 at 23:47)](https://leetcode.com/problems/reverse-vowels-of-a-string/discuss/1351223/C%2B%2Bor-EASY-TO-UNDERSTANDor-97.5-faster)  
 <h2>345. Reverse Vowels of a String</h2><h3>Easy</h3><hr><div><p>Given a string <code>s</code>, reverse only all the vowels in the string and return it.</p>
 
 <p>The vowels are <code>'a'</code>, <code>'e'</code>, <code>'i'</code>, <code>'o'</code>, and <code>'u'</code>, and they can appear in both cases.</p>
