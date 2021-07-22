@@ -1,3 +1,4 @@
+[Discussion Post (created on 23/6/2021 at 3:0)](https://leetcode.com/problems/top-k-frequent-elements/discuss/1355866/C%2B%2Bor-EASY-or-EFFICIENT-code)  
 [Discussion Post (created on 20/6/2021 at 4:29)](https://leetcode.com/problems/top-k-frequent-elements/discuss/1349377/C%2B%2Bor-EASY-TO-UNDERSTANDor-fast-and-efficient-or-using-comparator-function)  
 <h2>347. Top K Frequent Elements</h2><h3>Medium</h3><hr><div><p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <em>the</em> <code>k</code> <em>most frequent elements</em>. You may return the answer in <strong>any order</strong>.</p>
 
