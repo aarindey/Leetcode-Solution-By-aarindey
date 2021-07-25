@@ -1,3 +1,4 @@
+[Discussion Post (created on 26/6/2021 at 3:32)](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/discuss/1362820/C%2B%2Bor-100-FASTER-orEAS-TO-UNDERSTANDor-efficient-code)  
 <h2>1945. Sum of Digits of String After Convert</h2><h3>Easy</h3><hr><div><p>You are given a string <code>s</code> consisting of lowercase English letters, and an integer <code>k</code>.</p>
 
 <p>First, <strong>convert</strong> <code>s</code> into an integer by replacing each letter with its position in the alphabet (i.e., replace <code>'a'</code> with <code>1</code>, <code>'b'</code> with <code>2</code>, ..., <code>'z'</code> with <code>26</code>). Then, <strong>transform</strong> the integer by replacing it with the <strong>sum of its digits</strong>. Repeat the <strong>transform</strong> operation <code>k</code><strong> times</strong> in total.</p>
