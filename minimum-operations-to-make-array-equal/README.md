@@ -1,3 +1,4 @@
+[Discussion Post (created on 27/6/2021 at 4:56)](https://leetcode.com/problems/minimum-operations-to-make-array-equal/discuss/1365011/C%2B%2Bor-100-faster-or-EASY-TO-UNDERSTAND-or-efficient-code)  
 <h2>1551. Minimum Operations to Make Array Equal</h2><h3>Medium</h3><hr><div><p>You have an array <code>arr</code> of length <code>n</code> where <code>arr[i] = (2 * i) + 1</code> for all valid values of <code>i</code> (i.e. <code>0 &lt;= i &lt; n</code>).</p>
 
 <p>In one operation, you can select two indices <code>x</code>&nbsp;and <code>y</code> where <code>0 &lt;= x, y &lt; n</code> and subtract <code>1</code> from <code>arr[x]</code> and add <code>1</code> to <code>arr[y]</code>&nbsp;(i.e. perform <code>arr[x] -=1&nbsp;</code>and <code>arr[y] += 1</code>).&nbsp;The goal is to make all the elements of the array <strong>equal</strong>. It is <strong>guaranteed</strong> that all the elements of the array can be made equal using some operations.</p>
