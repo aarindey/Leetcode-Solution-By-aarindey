@@ -1,3 +1,4 @@
+[Discussion Post (created on 27/6/2021 at 2:34)](https://leetcode.com/problems/verifying-an-alien-dictionary/discuss/1364910/C%2B%2Bor-EASY-TO-UNDERSTAND-or-using-vector)  
 <h2>953. Verifying an Alien Dictionary</h2><h3>Easy</h3><hr><div><p>In an alien language, surprisingly they also use english lowercase letters, but possibly&nbsp;in a different <code>order</code>. The&nbsp;<code>order</code> of the alphabet&nbsp;is some permutation&nbsp;of lowercase letters.</p>
 
 <p>Given a sequence of <code>words</code>&nbsp;written in the alien language,&nbsp;and the <code>order</code> of the alphabet,&nbsp;return <code>true</code> if and only if the given <code>words</code>&nbsp;are sorted lexicographicaly in this alien language.</p>
