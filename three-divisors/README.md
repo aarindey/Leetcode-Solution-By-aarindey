@@ -1,3 +1,4 @@
+[Discussion Post (created on 7/7/2021 at 2:8)](https://leetcode.com/problems/three-divisors/discuss/1387919/C%2B%2Bor-100-faster-or-EASY-TO-UNDERSTAND-or)  
 <h2>1952. Three Divisors</h2><h3>Easy</h3><hr><div><p>Given an integer <code>n</code>, return <code>true</code><em> if </em><code>n</code><em> has <strong>exactly three positive divisors</strong>. Otherwise, return </em><code>false</code>.</p>
 
 <p>An integer <code>m</code> is a <strong>divisor</strong> of <code>n</code> if there exists an integer <code>k</code> such that <code>n = k * m</code>.</p>
