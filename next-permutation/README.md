@@ -1,3 +1,4 @@
+[Discussion Post (created on 9/7/2021 at 11:37)](https://leetcode.com/problems/next-permutation/discuss/1392551/C%2B%2Bor-EASY-TO-UNDERSTAND-or-fast-or-INTUITIVE)  
 <h2>31. Next Permutation</h2><h3>Medium</h3><hr><div><p>Implement <strong>next permutation</strong>, which rearranges numbers into the lexicographically next greater permutation of numbers.</p>
 
 <p>If such an arrangement is not possible, it must rearrange it as the lowest possible order (i.e., sorted in ascending order).</p>
