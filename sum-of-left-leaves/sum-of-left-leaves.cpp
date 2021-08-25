@@ -11,25 +11,26 @@
  */
 class Solution {
 public:
-    int sum=0;
-    bool last_left;
-    void dfs(TreeNode* root)
-    {
-        if(root==NULL)
-         return;
-        
-        if(last_left&&root->left==NULL&&root->right==NULL)
-        {
-            sum+=root->val;
-        }   
-        last_left=false;
-        dfs(root->right);
-        last_left=true;
-        dfs(root->left);
-    }    
-    int sumOfLeftLeaves(TreeNode* root) {
-       
-      dfs(root);
-        return sum;
-    }
+   int sumOfLeftLeaves(TreeNode* root) {
+if(!root) return 0;
+int sum=0;
+queue<TreeNode*>q;
+q.push(root);
+while(!q.empty())
+{
+int size=q.size();
+for(int i=0;i<size;i++)
+{
+TreeNode *node=q.front();
+q.pop();
+if(node->left)
+{
+if(node->left->left==NULL && node->left->right==NULL) sum+=node->left->val;
+else q.push(node->left);
+}
+if(node->right) q.push(node->right);
+}
+}
+return sum;
+}
 };
