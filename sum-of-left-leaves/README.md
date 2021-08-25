@@ -1,3 +1,4 @@
+[Discussion Post (created on 26/7/2021 at 3:50)](https://leetcode.com/problems/sum-of-left-leaves/discuss/1426389/C%2B%2Bor-100-FASTER-or-0-ms-oror-DFS-oror-EASY)  
 <h2>404. Sum of Left Leaves</h2><h3>Easy</h3><hr><div><p>Given the <code>root</code> of a binary tree, return the sum of all left leaves.</p>
 
 <p>&nbsp;</p>
