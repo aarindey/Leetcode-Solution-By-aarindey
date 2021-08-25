@@ -1,3 +1,4 @@
+[Discussion Post (created on 26/7/2021 at 3:25)](https://leetcode.com/problems/binary-tree-paths/discuss/1426362/C%2B%2Boror-EASY-oror-DFS-oror-RECURSION)  
 <h2>257. Binary Tree Paths</h2><h3>Easy</h3><hr><div><p>Given the <code>root</code> of a binary tree, return <em>all root-to-leaf paths in <strong>any order</strong></em>.</p>
 
 <p>A <strong>leaf</strong> is a node with no children.</p>
