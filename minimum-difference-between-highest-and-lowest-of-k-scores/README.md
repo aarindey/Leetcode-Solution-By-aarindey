@@ -1,3 +1,4 @@
+[Discussion Post (created on 29/7/2021 at 11:21)](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/discuss/1432144/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-FAST)  
 <h2>1984. Minimum Difference Between Highest and Lowest of K Scores</h2><h3>Easy</h3><hr><div><p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>, where <code>nums[i]</code> represents the score of the <code>i<sup>th</sup></code> student. You are also given an integer <code>k</code>.</p>
 
 <p>Pick the scores of any <code>k</code> students from the array so that the <strong>difference</strong> between the <strong>highest</strong> and the <strong>lowest</strong> of the <code>k</code> scores is <strong>minimized</strong>.</p>
