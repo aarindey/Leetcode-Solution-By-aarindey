@@ -1,3 +1,4 @@
+[Discussion Post (created on 2/8/2021 at 19:21)](https://leetcode.com/problems/first-missing-positive/discuss/1440674/C%2B%2Boror-EASY-TO-UNDERSTAND)  
 <h2>41. First Missing Positive</h2><h3>Hard</h3><hr><div><p>Given an unsorted integer array <code>nums</code>, return the smallest missing positive integer.</p>
 
 <p>You must implement an algorithm that runs in <code>O(n)</code> time and uses constant extra space.</p>
