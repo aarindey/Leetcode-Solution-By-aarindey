@@ -1,3 +1,4 @@
+[Discussion Post (created on 4/8/2021 at 2:11)](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/discuss/1442891/C%2B%2B-oror-EASY-oror-USING-comparator)  
 [Discussion Post (created on 29/7/2021 at 11:34)](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/discuss/1432181/C%2B%2Boror-EASY-TO-UNDERSTAND-oror-FAST)  
 <h2>1985. Find the Kth Largest Integer in the Array</h2><h3>Medium</h3><hr><div><p>You are given an array of strings <code>nums</code> and an integer <code>k</code>. Each string in <code>nums</code> represents an integer without leading zeros.</p>
 
