@@ -1,3 +1,4 @@
+[Discussion Post (created on 7/8/2021 at 1:50)](https://leetcode.com/problems/4sum/discuss/1448921/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-Efficient)  
 <h2>18. 4Sum</h2><h3>Medium</h3><hr><div><p>Given an array <code>nums</code> of <code>n</code> integers, return <em>an array of all the <strong>unique</strong> quadruplets</em> <code>[nums[a], nums[b], nums[c], nums[d]]</code> such that:</p>
 
 <ul>
