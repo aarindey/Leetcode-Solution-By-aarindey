@@ -1,3 +1,4 @@
+[Discussion Post (created on 8/8/2021 at 2:3)](https://leetcode.com/problems/median-of-two-sorted-arrays/discuss/1450956/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-3-methods)  
 <h2>4. Median of Two Sorted Arrays</h2><h3>Hard</h3><hr><div><p>Given two sorted arrays <code>nums1</code> and <code>nums2</code> of size <code>m</code> and <code>n</code> respectively, return <strong>the median</strong> of the two sorted arrays.</p>
 
 <p>The overall run time complexity should be <code>O(log (m+n))</code>.</p>
