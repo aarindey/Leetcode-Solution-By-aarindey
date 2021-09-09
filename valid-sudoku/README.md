@@ -1,3 +1,4 @@
+[Discussion Post (created on 10/8/2021 at 2:31)](https://leetcode.com/problems/valid-sudoku/discuss/1454547/C%2B%2B)  
 <h2>36. Valid Sudoku</h2><h3>Medium</h3><hr><div><p>Determine if a&nbsp;<code>9 x 9</code> Sudoku board&nbsp;is valid.&nbsp;Only the filled cells need to be validated&nbsp;<strong>according to the following rules</strong>:</p>
 
 <ol>
