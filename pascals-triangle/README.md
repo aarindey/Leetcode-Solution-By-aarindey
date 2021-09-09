@@ -1,3 +1,4 @@
+[Discussion Post (created on 10/8/2021 at 1:1)](https://leetcode.com/problems/pascals-triangle/discuss/1454453/C%2B%2B-oror-EASY)  
 <h2>118. Pascal's Triangle</h2><h3>Easy</h3><hr><div><p>Given an integer <code>numRows</code>, return the first numRows of <strong>Pascal's triangle</strong>.</p>
 
 <p>In <strong>Pascal's triangle</strong>, each number is the sum of the two numbers directly above it as shown:</p>
