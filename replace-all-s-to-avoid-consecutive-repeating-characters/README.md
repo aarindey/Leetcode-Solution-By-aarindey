@@ -1,3 +1,4 @@
+[Discussion Post (created on 10/8/2021 at 1:29)](https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/discuss/1454490/C%2B%2B-oror-EASY-TO-UNDERSTANDoror-FAST)  
 <h2>1576. Replace All ?'s to Avoid Consecutive Repeating Characters</h2><h3>Easy</h3><hr><div><p>Given a string <code>s</code> containing only lowercase English letters and the <code>'?'</code> character, convert <strong>all </strong>the <code>'?'</code> characters into lowercase letters such that the final string does not contain any <strong>consecutive repeating </strong>characters. You <strong>cannot </strong>modify the non <code>'?'</code> characters.</p>
 
 <p>It is <strong>guaranteed </strong>that there are no consecutive repeating characters in the given string <strong>except </strong>for <code>'?'</code>.</p>
