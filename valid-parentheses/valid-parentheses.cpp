@@ -21,7 +21,7 @@ public:
                 x.pop();
             } 
             else
-            return false;
+            x.push(s[i]);
             } 
             else
             return false;
