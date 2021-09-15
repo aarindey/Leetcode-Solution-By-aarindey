@@ -46,12 +46,10 @@ public:
                 temp.push_back(f->val);
                 if(f->left)
                 {
-                
                 q.push(f->left);
                 }
                 if(f->right)
-                {
-                   
+                {  
                     q.push(f->right);
                 }
             }
