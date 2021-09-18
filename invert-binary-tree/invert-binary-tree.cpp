@@ -11,14 +11,19 @@
  */
 class Solution {
 public:
-    void invert(TreeNode* root){
-        if(root==NULL)  return;  //return if we reach NULL
+    void invert(TreeNode* root)
+    {
+        //base case
+        if(root==NULL)
+        return;
         //recur
+        if(root->left)
         invert(root->left);
+        if(root->right)
         invert(root->right);
-        //swap the child nodes
-        TreeNode* l=root->left;
+        //swapping nodes 
         TreeNode* r=root->right;
+        TreeNode* l=root->left;
         root->left=r;
         root->right=l;
     }
