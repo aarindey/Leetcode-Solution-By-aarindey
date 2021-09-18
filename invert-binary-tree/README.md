@@ -1,3 +1,4 @@
+[Discussion Post (created on 18/8/2021 at 12:34)](https://leetcode.com/problems/invert-binary-tree/discuss/1470101/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-FAST-oror-EASY)  
 <h2>226. Invert Binary Tree</h2><h3>Easy</h3><hr><div><p>Given the <code>root</code> of a binary tree, invert the tree, and return <em>its root</em>.</p>
 
 <p>&nbsp;</p>
