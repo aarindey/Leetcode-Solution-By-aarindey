@@ -1,3 +1,4 @@
+[Discussion Post (created on 20/8/2021 at 4:2)](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/discuss/1473777/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-FAST-oror-using-dynamic-Programming)  
 <h2>1884. Egg Drop With 2 Eggs and N Floors</h2><h3>Medium</h3><hr><div><p>You are given <strong>two identical</strong> eggs and you have access to a building with <code>n</code> floors labeled from <code>1</code> to <code>n</code>.</p>
 
 <p>You know that there exists a floor <code>f</code> where <code>0 &lt;= f &lt;= n</code> such that any egg dropped at a floor <strong>higher</strong> than <code>f</code> will <strong>break</strong>, and any egg dropped <strong>at or below</strong> floor <code>f</code> will <strong>not break</strong>.</p>
