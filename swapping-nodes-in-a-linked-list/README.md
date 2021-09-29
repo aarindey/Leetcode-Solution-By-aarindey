@@ -1,3 +1,4 @@
+[Discussion Post (created on 30/8/2021 at 4:13)](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/discuss/1494269/C%2B%2B-oror-EASY-TO-UNDERSTAND)  
 <h2>1721. Swapping Nodes in a Linked List</h2><h3>Medium</h3><hr><div><p>You are given the <code>head</code> of a linked list, and an integer <code>k</code>.</p>
 
 <p>Return <em>the head of the linked list after <strong>swapping</strong> the values of the </em><code>k<sup>th</sup></code> <em>node from the beginning and the </em><code>k<sup>th</sup></code> <em>node from the end (the list is <strong>1-indexed</strong>).</em></p>
