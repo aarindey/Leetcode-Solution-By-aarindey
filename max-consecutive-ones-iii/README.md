@@ -1,3 +1,4 @@
+[Discussion Post (created on 2/9/2021 at 21:44)](https://leetcode.com/problems/max-consecutive-ones-iii/discuss/1499166/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-FAST-and-EFFICIENT)  
 <h2>1004. Max Consecutive Ones III</h2><h3>Medium</h3><hr><div><p>Given a binary array <code>nums</code> and an integer <code>k</code>, return <em>the maximum number of consecutive </em><code>1</code><em>'s in the array if you can flip at most</em> <code>k</code> <code>0</code>'s.</p>
 
 <p>&nbsp;</p>
