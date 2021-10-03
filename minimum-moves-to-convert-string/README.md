@@ -1,3 +1,4 @@
+[Discussion Post (created on 3/9/2021 at 20:16)](https://leetcode.com/problems/minimum-moves-to-convert-string/discuss/1501293/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-efficient)  
 <h2>2027. Minimum Moves to Convert String</h2><h3>Easy</h3><hr><div><p>You are given a string <code>s</code> consisting of <code>n</code> characters which are either <code>'X'</code> or <code>'O'</code>.</p>
 
 <p>A <strong>move</strong> is defined as selecting <strong>three</strong> <strong>consecutive characters</strong> of <code>s</code> and converting them to <code>'O'</code>. Note that if a move is applied to the character <code>'O'</code>, it will stay the <strong>same</strong>.</p>
