@@ -1,3 +1,4 @@
+[Discussion Post (created on 5/9/2021 at 3:24)](https://leetcode.com/problems/maximal-square/discuss/1503608/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-FAST)  
 <h2>221. Maximal Square</h2><h3>Medium</h3><hr><div><p>Given an <code>m x n</code> binary <code>matrix</code> filled with <code>0</code>'s and <code>1</code>'s, <em>find the largest square containing only</em> <code>1</code>'s <em>and return its area</em>.</p>
 
 <p>&nbsp;</p>
