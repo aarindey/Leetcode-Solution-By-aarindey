@@ -1,3 +1,4 @@
+[Discussion Post (created on 7/9/2021 at 0:49)](https://leetcode.com/problems/string-matching-in-an-array/discuss/1507089/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-short-and-Efficient)  
 <h2>1408. String Matching in an Array</h2><h3>Easy</h3><hr><div><p>Given an array of string <code>words</code>. Return all strings in <code>words</code> which is substring of another word in <strong>any</strong> order.&nbsp;</p>
 
 <p>String <code>words[i]</code> is substring of <code>words[j]</code>,&nbsp;if&nbsp;can be obtained removing some characters to left and/or right side of <code>words[j]</code>.</p>
