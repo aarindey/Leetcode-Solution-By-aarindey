@@ -1,3 +1,4 @@
+[Discussion Post (created on 7/9/2021 at 1:51)](https://leetcode.com/problems/construct-string-from-binary-tree/discuss/1507166/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-short-code-oror-linear-complexity)  
 <h2>606. Construct String from Binary Tree</h2><h3>Easy</h3><hr><div><p>Given the <code>root</code> of a binary tree, construct a string consists of parenthesis and integers from a binary tree with the preorder traversing way, and return it.</p>
 
 <p>Omit all the empty parenthesis pairs that do not affect the one-to-one mapping relationship between the string and the original binary tree.</p>
