@@ -1,3 +1,4 @@
+[Discussion Post (created on 7/9/2021 at 3:4)](https://leetcode.com/problems/recover-binary-search-tree/discuss/1507268/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-2-methods-oror-O(1)-space)  
 <h2>99. Recover Binary Search Tree</h2><h3>Medium</h3><hr><div><p>You are given the <code>root</code> of a binary search tree (BST), where the values of <strong>exactly</strong> two nodes of the tree were swapped by mistake. <em>Recover the tree without changing its structure</em>.</p>
 
 <p>&nbsp;</p>
