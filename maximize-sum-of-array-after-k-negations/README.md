@@ -1,3 +1,4 @@
+[Discussion Post (created on 8/9/2021 at 0:13)](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/discuss/1509119/C%2B%2B-oror-EASY)  
 <h2>1005. Maximize Sum Of Array After K Negations</h2><h3>Easy</h3><hr><div><p>Given an integer array <code>nums</code> and an integer <code>k</code>, modify the array in the following way:</p>
 
 <ul>
