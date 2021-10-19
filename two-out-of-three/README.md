@@ -1,3 +1,4 @@
+[Discussion Post (created on 20/9/2021 at 2:23)](https://leetcode.com/problems/two-out-of-three/discuss/1530350/C%2B%2B-oror-EASY-TO-UNDERSATND-oror-using-find()-func.)  
 <h2>2032. Two Out of Three</h2><h3>Easy</h3><hr><div>Given three integer arrays <code>nums1</code>, <code>nums2</code>, and <code>nums3</code>, return <em>a <strong>distinct</strong> array containing all the values that are present in <strong>at least two</strong> out of the three arrays. You may return the values in <strong>any</strong> order</em>.
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
