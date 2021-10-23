@@ -1,3 +1,4 @@
+[Discussion Post (created on 24/9/2021 at 1:54)](https://leetcode.com/problems/maximum-population-year/discuss/1537070/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-FAST-and-Efficient-oror-line-sweep-algo)  
 <h2>1854. Maximum Population Year</h2><h3>Easy</h3><hr><div><p>You are given a 2D integer array <code>logs</code> where each <code>logs[i] = [birth<sub>i</sub>, death<sub>i</sub>]</code> indicates the birth and death years of the <code>i<sup>th</sup></code> person.</p>
 
 <p>The <strong>population</strong> of some year <code>x</code> is the number of people alive during that year. The <code>i<sup>th</sup></code> person is counted in year <code>x</code>'s population if <code>x</code> is in the <strong>inclusive</strong> range <code>[birth<sub>i</sub>, death<sub>i</sub> - 1]</code>. Note that the person is <strong>not</strong> counted in the year that they die.</p>
