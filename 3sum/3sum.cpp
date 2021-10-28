@@ -24,7 +24,6 @@ public:
                 high--;
                 else
                 low++;    
-                
             }    
         }  
         return ans;
