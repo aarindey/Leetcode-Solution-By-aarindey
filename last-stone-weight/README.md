@@ -1,3 +1,4 @@
+[Discussion Post (created on 29/9/2021 at 2:59)](https://leetcode.com/problems/last-stone-weight/discuss/1546125/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-priority-queue-oror-MAX-heap)  
 <h2>1046. Last Stone Weight</h2><h3>Easy</h3><hr><div><p>You are given an array of integers <code>stones</code> where <code>stones[i]</code> is the weight of the <code>i<sup>th</sup></code> stone.</p>
 
 <p>We are playing a game with the stones. On each turn, we choose the <strong>heaviest two stones</strong> and smash them together. Suppose the heaviest two stones have weights <code>x</code> and <code>y</code> with <code>x &lt;= y</code>. The result of this smash is:</p>
