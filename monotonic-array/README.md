@@ -1,3 +1,4 @@
+[Discussion Post (created on 3/10/2021 at 16:38)](https://leetcode.com/problems/monotonic-array/discuss/1556974/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-FAST)  
 <h2>896. Monotonic Array</h2><h3>Easy</h3><hr><div><p>An array is <strong>monotonic</strong> if it is either monotone increasing or monotone decreasing.</p>
 
 <p>An array <code>nums</code> is monotone increasing if for all <code>i &lt;= j</code>, <code>nums[i] &lt;= nums[j]</code>. An array <code>nums</code> is monotone decreasing if for all <code>i &lt;= j</code>, <code>nums[i] &gt;= nums[j]</code>.</p>
