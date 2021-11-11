@@ -1,9 +1,9 @@
 class Solution {
 public:
     int minStartValue(vector<int>& nums) {
-     int sum=0;  
-      int ans=INT_MAX;  
-     for(int i=0;i<nums.size();i++)
+     int sum=nums[0];  
+      int ans=nums[0];  
+     for(int i=1;i<nums.size();i++)
      {
         sum+=nums[i];
          ans=min(sum,ans);
