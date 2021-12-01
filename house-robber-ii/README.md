@@ -1,3 +1,4 @@
+[Discussion Post (created on 2/11/2021 at 2:21)](https://leetcode.com/problems/house-robber-ii/discuss/1606742/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-FAST-oror-short-and-concise)  
 <h2>213. House Robber II</h2><h3>Medium</h3><hr><div><p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are <strong>arranged in a circle.</strong> That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and&nbsp;<b>it will automatically contact the police if two adjacent houses were broken into on the same night</b>.</p>
 
 <p>Given an integer array <code>nums</code> representing the amount of money of each house, return <em>the maximum amount of money you can rob tonight <strong>without alerting the police</strong></em>.</p>
