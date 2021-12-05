@@ -11,27 +11,23 @@
  */
 class Solution {
 public:
-    unordered_map<TreeNode*,int> mp;
-    int recurse(TreeNode* root)
+    pair<int,int> helper(TreeNode* root)
     {
-        if(!root)
-        return 0;
-        if(mp.count(root)>0)
-        return mp[root];
-        int ans_including_root=root->val;
-        if(root->left!=NULL)
-        {
-            ans_including_root+=recurse(root->left->left)+recurse(root->left->right);
-        }
-        if(root->right!=NULL)
-        {
-             ans_including_root+=recurse(root->right->left)+recurse(root->right->right);
-        }
-        int ans_excluding_root=recurse(root->left)+recurse(root->right);
-        mp[root]=max(ans_including_root,ans_excluding_root);
-        return mp[root];
+        if(root==NULL)
+        return {0,0};
+        pair<int,int> l,r;
+        l=helper(root->left);
+        r=helper(root->right);
+        int con_root,not_con_root;
+        pair<int,int> res;
+        con_root=root->val+l.second+r.second;
+        not_con_root=max(l.first,l.second)+max(r.first,r.second);
+        res.first=con_root;
+        res.second=not_con_root;
+        return res;
     }
     int rob(TreeNode* root) {
-        return recurse(root);
+        pair<int,int> ans= helper(root);
+        return max(ans.first,ans.second);
     }
 };
