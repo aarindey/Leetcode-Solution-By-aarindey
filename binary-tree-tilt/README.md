@@ -1,3 +1,4 @@
+[Discussion Post (created on 8/11/2021 at 17:25)](https://leetcode.com/problems/binary-tree-tilt/discuss/1618132/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-using-2-dfs)  
 <h2>563. Binary Tree Tilt</h2><h3>Easy</h3><hr><div><p>Given the <code>root</code> of a binary tree, return <em>the sum of every tree node's <strong>tilt</strong>.</em></p>
 
 <p>The <strong>tilt</strong> of a tree node is the <b>absolute difference</b> between the sum of all left subtree node <strong>values</strong> and all right subtree node <strong>values</strong>. If a node does not have a left child, then the sum of the left subtree node <strong>values</strong> is treated as <code>0</code>. The rule is similar if there the node does not have a right child.</p>
