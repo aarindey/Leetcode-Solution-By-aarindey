@@ -11,43 +11,20 @@
  */
 class Solution {
 public:
-    int subtreesum(TreeNode* node)
+    int ans=0;
+    int tiltsum(TreeNode* root)
     {
-        if(node==NULL)
+        if(root==NULL)
         return 0;
-        int sum=node->val;
-        sum+=subtreesum(node->left);
-        sum+=subtreesum(node->right);
-        return sum;
-    }
-    void sumtilt(TreeNode* root,int &sum)
-    {
-        if(!root->left&&!root->right)
-        {
-            return;
-        }
-        else if(root->left==NULL&&root->right!=NULL)
-        {
-            sum+=abs(subtreesum(root->right));
-            sumtilt(root->right,sum);
-        }
-        else if(root->left!=NULL&&root->right==NULL)
-        {
-            sum+=abs(subtreesum(root->left));
-            sumtilt(root->left,sum);
-        }
-        else
-        {
-            sum+=abs(subtreesum(root->left)-subtreesum(root->right));
-            sumtilt(root->left,sum);
-            sumtilt(root->right,sum);
-        }
+        int leftSum=tiltsum(root->left);
+        int rightSum=tiltsum(root->right);
+        ans+=abs(leftSum-rightSum);
+        return root->val+leftSum+rightSum;
     }
     int findTilt(TreeNode* root) {
-      int sum=0;
-      if(root==NULL)
+        if(!root)
         return 0;
-      sumtilt(root,sum);
-      return sum;
+        tiltsum(root);
+        return ans;
     }
 };
