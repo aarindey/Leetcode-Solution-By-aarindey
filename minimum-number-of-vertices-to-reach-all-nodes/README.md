@@ -1,3 +1,4 @@
+[Discussion Post (created on 13/11/2021 at 1:25)](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/discuss/1625734/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-FAST)  
 <h2>1557. Minimum Number of Vertices to Reach All Nodes</h2><h3>Medium</h3><hr><div><p>Given a<strong>&nbsp;directed acyclic graph</strong>,&nbsp;with&nbsp;<code>n</code>&nbsp;vertices numbered from&nbsp;<code>0</code>&nbsp;to&nbsp;<code>n-1</code>,&nbsp;and an array&nbsp;<code>edges</code>&nbsp;where&nbsp;<code>edges[i] = [from<sub>i</sub>, to<sub>i</sub>]</code>&nbsp;represents a directed edge from node&nbsp;<code>from<sub>i</sub></code>&nbsp;to node&nbsp;<code>to<sub>i</sub></code>.</p>
 
 <p>Find <em>the smallest set of vertices from which all nodes in the graph are reachable</em>. It's guaranteed that a unique solution exists.</p>
