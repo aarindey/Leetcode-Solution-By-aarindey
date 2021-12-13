@@ -1,3 +1,4 @@
+[Discussion Post (created on 14/11/2021 at 3:28)](https://leetcode.com/problems/find-and-replace-pattern/discuss/1627682/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-FAST-oror-2-approaches)  
 <h2>890. Find and Replace Pattern</h2><h3>Medium</h3><hr><div><p>Given a list of strings <code>words</code> and a string <code>pattern</code>, return <em>a list of</em> <code>words[i]</code> <em>that match</em> <code>pattern</code>. You may return the answer in <strong>any order</strong>.</p>
 
 <p>A word matches the pattern if there exists a permutation of letters <code>p</code> so that after replacing every letter <code>x</code> in the pattern with <code>p(x)</code>, we get the desired word.</p>
