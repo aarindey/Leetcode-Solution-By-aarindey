@@ -1,4 +1,3 @@
-[Discussion Post (created on 14/11/2021 at 5:1)](https://leetcode.com/problems/letter-tile-possibilities/discuss/1627746/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-efficient)  
 <h2>1079. Letter Tile Possibilities</h2><h3>Medium</h3><hr><div><p>You have <code>n</code>&nbsp;&nbsp;<code>tiles</code>, where each tile has one letter <code>tiles[i]</code> printed on it.</p>
 
 <p>Return <em>the number of possible non-empty sequences of letters</em> you can make using the letters printed on those <code>tiles</code>.</p>
