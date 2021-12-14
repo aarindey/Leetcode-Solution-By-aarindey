@@ -1,3 +1,4 @@
+[Discussion Post (created on 15/11/2021 at 4:6)](https://leetcode.com/problems/shift-2d-grid/discuss/1629301/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-FAST)  
 <h2>1260. Shift 2D Grid</h2><h3>Easy</h3><hr><div><p>Given a 2D <code>grid</code> of size <code>m x n</code>&nbsp;and an integer <code>k</code>. You need to shift the <code>grid</code>&nbsp;<code>k</code> times.</p>
 
 <p>In one shift operation:</p>
