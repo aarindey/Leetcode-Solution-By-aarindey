@@ -1,3 +1,4 @@
+[Discussion Post (created on 15/11/2021 at 4:59)](https://leetcode.com/problems/subtree-of-another-tree/discuss/1629321/C%2B%2B-oror-Recursive-ororDFS)  
 <h2>572. Subtree of Another Tree</h2><h3>Easy</h3><hr><div><p>Given the roots of two binary trees <code>root</code> and <code>subRoot</code>, return <code>true</code> if there is a subtree of <code>root</code> with the same structure and node values of<code> subRoot</code> and <code>false</code> otherwise.</p>
 
 <p>A subtree of a binary tree <code>tree</code> is a tree that consists of a node in <code>tree</code> and all of this node's descendants. The tree <code>tree</code> could also be considered as a subtree of itself.</p>
