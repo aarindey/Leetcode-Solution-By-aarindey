@@ -1,3 +1,4 @@
+[Discussion Post (created on 19/11/2021 at 22:28)](https://leetcode.com/problems/delete-leaves-with-a-given-value/discuss/1636360/C%2B%2B-oror-EASY-TO-UNDERSTAND)  
 <h2>1325. Delete Leaves With a Given Value</h2><h3>Medium</h3><hr><div><p>Given a binary tree <code>root</code> and an integer <code>target</code>, delete all the <strong>leaf nodes</strong> with value <code>target</code>.</p>
 
 <p>Note that once you delete a leaf node with value <code>target</code><strong>, </strong>if its parent node becomes a leaf node and has the value <code>target</code>, it should also be deleted (you need to continue doing that until you cannot).</p>
