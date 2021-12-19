@@ -1,35 +1,39 @@
 class Solution {
 public:
-    string helper(string &s,int &i)
-    {
-        string result="";
-        while(i<s.length()&&s[i]!=']')
+    int i=0;
+    string decodeString(string s) {
+        int n=s.length();
+         int num=0;
+        string ans="";
+        while(i<n)
         {
-            if(isdigit(s[i]))
+            if(s[i]>=97&&s[i]<=122)
             {
-                int num=0;
-                while(i<s.length()&&isdigit(s[i]))
+                ans+=s[i];
+                i++;
+            }
+            else if(isdigit(s[i]))
+            {
+                while(isdigit(s[i]))
                 {
-                    num=num*10+(s[i]-'0');
+                    num=num*10+s[i]-'0';
                     i++;
                 }
-                i++;
-                string str=helper(s,i);
-                while(num--)
-                {
-                    result+=str;
-                }
-                i++;
             }
-            else{
-                result+=s[i];
-                i++;
+            else if(s[i]=='[')
+            {
+               i++;
+               string str=decodeString(s);
+               while(num--)
+               ans+=str;
+               i++;
+               num=0;
+            }
+            else 
+            {
+                return ans;
             }
         }
-        return result;
-    }
-    string decodeString(string s) {
-        int index=0;
-     return helper(s,index);
+        return ans;
     }
 };
