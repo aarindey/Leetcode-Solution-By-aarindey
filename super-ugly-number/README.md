@@ -1,3 +1,4 @@
+[Discussion Post (created on 21/11/2021 at 12:54)](https://leetcode.com/problems/super-ugly-number/discuss/1639131/C%2B%2B-oror-DP-oror-optimized)  
 <h2>313. Super Ugly Number</h2><h3>Medium</h3><hr><div><p>A <strong>super ugly number</strong> is a positive integer whose prime factors are in the array <code>primes</code>.</p>
 
 <p>Given an integer <code>n</code> and an array of integers <code>primes</code>, return <em>the</em> <code>n<sup>th</sup></code> <em><strong>super ugly number</strong></em>.</p>
