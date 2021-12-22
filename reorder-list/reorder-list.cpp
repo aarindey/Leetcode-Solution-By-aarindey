@@ -8,36 +8,38 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-#include<vector>
 class Solution {
 public:
     void reorderList(ListNode* head) {
-        vector<ListNode*> v;
+        if(head==NULL||head->next==NULL||head->next->next==NULL)
+        return;
+        
+        stack<ListNode*> st;
         ListNode* temp=head;
         int l=0;
         while(temp)
         {
-            ListNode* t=temp;
-            v.push_back(t);
+            st.push(temp);
             temp=temp->next;
             l++;
         }
-        ListNode* ptr=head;
-        ListNode* pptr=ptr;
-        int i=0,j=v.size();
+        temp=head->next;
         int c=1;
+        ListNode *p;
+        p=head;
         while(c!=l)
         {
-            pptr->next=v[--j];
-            pptr=pptr->next;
+            p->next=st.top();
+            st.pop();
+            p=p->next;
             c++;
             if(c==l)
             break;
-            pptr->next=v[++i];
-            pptr=pptr->next;
+            p->next=temp;
+            p=p->next;
+            temp=temp->next;
             c++;
         }
-        pptr->next=NULL;
-        head=ptr;
+        p->next=NULL;
     }
 };
