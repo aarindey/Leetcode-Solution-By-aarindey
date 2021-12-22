@@ -1,3 +1,4 @@
+[Discussion Post (created on 22/11/2021 at 19:33)](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/discuss/1641453/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-efficient)  
 <h2>1011. Capacity To Ship Packages Within D Days</h2><h3>Medium</h3><hr><div><p>A conveyor belt has packages that must be shipped from one port to another within <code>days</code> days.</p>
 
 <p>The <code>i<sup>th</sup></code> package on the conveyor belt has a weight of <code>weights[i]</code>. Each day, we load the ship with packages on the conveyor belt (in the order given by <code>weights</code>). We may not load more weight than the maximum weight capacity of the ship.</p>
