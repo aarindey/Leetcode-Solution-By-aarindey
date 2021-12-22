@@ -1,3 +1,4 @@
+[Discussion Post (created on 23/11/2021 at 2:51)](https://leetcode.com/problems/count-good-nodes-in-binary-tree/discuss/1642066/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-DFS-and-BFS-solution)  
 <h2>1448. Count Good Nodes in Binary Tree</h2><h3>Medium</h3><hr><div><p>Given a binary tree <code>root</code>, a node <em>X</em> in the tree is named&nbsp;<strong>good</strong> if in the path from root to <em>X</em> there are no nodes with a value <em>greater than</em> X.</p>
 
 <p>Return the number of <strong>good</strong> nodes in the binary tree.</p>
