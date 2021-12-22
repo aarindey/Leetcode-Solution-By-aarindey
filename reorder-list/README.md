@@ -1,3 +1,4 @@
+[Discussion Post (created on 22/11/2021 at 6:9)](https://leetcode.com/problems/reorder-list/discuss/1640422/C%2B%2B-oror-EASY-TO-UNDERSTAD-oror-2-methods-using-vector-and-stack)  
 <h2>143. Reorder List</h2><h3>Medium</h3><hr><div><p>You are given the head of a singly linked-list. The list can be represented as:</p>
 
 <pre>L<sub>0</sub> → L<sub>1</sub> → … → L<sub>n - 1</sub> → L<sub>n</sub>
