@@ -1,3 +1,4 @@
+[Discussion Post (created on 28/11/2021 at 6:23)](https://leetcode.com/problems/middle-of-the-linked-list/discuss/1651488/C%2B%2B-oror-EASY-TO-UNDERSATND-oror-fast-and-slow-pointer-approach)  
 <h2>876. Middle of the Linked List</h2><h3>Easy</h3><hr><div><p>Given a non-empty, singly&nbsp;linked list with head node <code>head</code>, return&nbsp;a&nbsp;middle node of linked list.</p>
 
 <p>If there are two middle nodes, return the second middle node.</p>
