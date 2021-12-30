@@ -1,3 +1,4 @@
+[Discussion Post (created on 30/11/2021 at 8:9)](https://leetcode.com/problems/smallest-integer-divisible-by-k/discuss/1655736/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-2-approaches)  
 <h2>1015. Smallest Integer Divisible by K</h2><h3>Medium</h3><hr><div><p>Given a positive integer <code>k</code>, you need to find the <strong>length</strong> of the <strong>smallest</strong> positive integer <code>n</code> such that <code>n</code> is divisible by <code>k</code>, and <code>n</code> only contains the digit <code>1</code>.</p>
 
 <p>Return <em>the <strong>length</strong> of </em><code>n</code>. If there is no such <code>n</code>, return -1.</p>
