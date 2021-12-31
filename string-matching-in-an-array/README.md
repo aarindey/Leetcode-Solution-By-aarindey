@@ -1,3 +1,4 @@
+[Discussion Post (created on 31/11/2021 at 17:1)](https://leetcode.com/problems/string-matching-in-an-array/discuss/1658277/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-SIMPLE)  
 [Discussion Post (created on 7/9/2021 at 0:49)](https://leetcode.com/problems/string-matching-in-an-array/discuss/1507089/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-short-and-Efficient)  
 <h2>1408. String Matching in an Array</h2><h3>Easy</h3><hr><div><p>Given an array of string <code>words</code>. Return all strings in <code>words</code> which is substring of another word in <strong>any</strong> order.&nbsp;</p>
 
