@@ -11,22 +11,9 @@
  */
 class Solution {
 public:
-    vector<int> v;
-    void dfs(TreeNode *root)
-    {
-        if(root==NULL)
-        return;
-        v.push_back(root->val);
-        dfs(root->left);
-        dfs(root->right);
-    }    
-    bool isUnivalTree(TreeNode* root) {
-         dfs(root);
-         for(int i=1;i<v.size();i++)
-         {
-             if(v[i]!=v[i-1])
-             return false;    
-         }    
-         return true;
-    }
+bool isUnivalTree(TreeNode* root){
+    bool left_correct=(root->left==NULL)||(root->val==root->left->val)&&isUnivalTree(root->left);
+    bool right_correct=(root->right==NULL)||(root->val==root->right->val)&&isUnivalTree(root->right);
+    return left_correct&&right_correct;
+}
 };
