@@ -19,8 +19,7 @@ public:
                 {
                     pointers[j]++;
                 }
-            }
-            
+            }  
         }
         return dp[n];
     }
