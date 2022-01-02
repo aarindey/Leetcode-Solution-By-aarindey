@@ -1,3 +1,4 @@
+[Discussion Post (created on 2/0/2022 at 12:34)](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/discuss/1661600/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-simple-solution)  
 <h2>1010. Pairs of Songs With Total Durations Divisible by 60</h2><h3>Medium</h3><hr><div><p>You are given a list of songs where the i<sup>th</sup> song has a duration of <code>time[i]</code> seconds.</p>
 
 <p>Return <em>the number of pairs of songs for which their total duration in seconds is divisible by</em> <code>60</code>. Formally, we want the number of indices <code>i</code>, <code>j</code> such that <code>i &lt; j</code> with <code>(time[i] + time[j]) % 60 == 0</code>.</p>
