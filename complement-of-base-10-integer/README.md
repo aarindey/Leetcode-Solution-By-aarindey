@@ -1,3 +1,4 @@
+[Discussion Post (created on 4/0/2022 at 11:14)](https://leetcode.com/problems/complement-of-base-10-integer/discuss/1665719/C%2B%2B-oror-EASY-TO-UNDERSTAND)  
 <h2>1009. Complement of Base 10 Integer</h2><h3>Easy</h3><hr><div><p>Every non-negative integer <code>n</code>&nbsp;has a binary representation.&nbsp; For example,&nbsp;<code>5</code> can be represented as <code>"101"</code>&nbsp;in binary, <code>11</code> as <code>"1011"</code>&nbsp;in binary, and so on.&nbsp; Note that except for <code>n = 0</code>, there are no leading zeroes in any&nbsp;binary representation.</p>
 
 <p>The <em>complement</em>&nbsp;of a binary representation&nbsp;is the number in binary you get when changing every <code>1</code> to a <code>0</code> and <code>0</code> to a <code>1</code>.&nbsp; For example, the complement of <code>"101"</code> in binary is <code>"010"</code> in binary.</p>
