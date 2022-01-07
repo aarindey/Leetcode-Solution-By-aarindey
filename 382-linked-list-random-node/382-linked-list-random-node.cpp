@@ -19,18 +19,14 @@ public:
     int getRandom() {
        int len=0;
        ListNode* temp=root;
+       vector<int> v;
        while(temp)
        {
            len++;
+           v.push_back(temp->val);
            temp=temp->next;
        }
-       int randomLen=rand()%len; 
-       temp=root;
-       while(randomLen--)
-       {
-           temp=temp->next;
-       }
-       return temp->val;
+       return v[rand()%len];
     }
 };
 
