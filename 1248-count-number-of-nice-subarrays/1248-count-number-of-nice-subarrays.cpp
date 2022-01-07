@@ -2,7 +2,6 @@ class Solution {
 public:
     int numberOfSubarrays(vector<int>& nums, int k) {
         int n=nums.size();
-        vector<int> prefix(n,0);
         int ans=0;
         unordered_map<int,int> mp;
         int sum=0;
