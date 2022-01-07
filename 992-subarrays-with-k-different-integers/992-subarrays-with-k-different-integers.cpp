@@ -7,7 +7,7 @@ public:
      
      int j=0;
      int n=nums.size();
-     map<int,int> freq;
+     unordered_map<int,int> freq;
      int total=0;
      int diff=0;
      for(int i=0;i<n;i++)
