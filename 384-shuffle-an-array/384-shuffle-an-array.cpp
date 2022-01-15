@@ -21,7 +21,6 @@ public:
             swap(curr[i],curr[j]);
             n--;
         }
-        
         return curr;
     }
 };
