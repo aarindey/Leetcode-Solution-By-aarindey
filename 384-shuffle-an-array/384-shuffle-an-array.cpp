@@ -14,19 +14,14 @@ public:
     }
     
     vector<int> shuffle() {
-        vector<int> shuffled;
-        set<int> check;
         int n=curr.size();
-        while(check.size()!=n)
+        for(int i=n-1;i>=0;i--)
         {
-            int i=rand()%n;
-            if(check.find(i)==check.end())
-            {
-            shuffled.push_back(curr[i]);
-            check.insert(i);
-            }
+            int j=rand()%n;
+            swap(curr[i],curr[j]);
+            n--;
         }
-        curr=shuffled;
+        
         return curr;
     }
 };
