@@ -11,6 +11,6 @@ public:
         }
         if(word[0]<=90&&word[0]>=65)
           return (count2==1)||(count2==word.size());
-        return (count1==word.size())||(count2==word.size());
+        return count1==word.size();
     }
 };
