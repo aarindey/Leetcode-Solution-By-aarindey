@@ -2,20 +2,16 @@ class Solution {
 public:
     vector<int> maxScoreIndices(vector<int>& nums) {
         int n=nums.size();
-        vector<int> prefix(n,0);
-        
-        prefix[0]=nums[0];
-        for(int i=1;i<n;i++)
-        {
-            prefix[i]=prefix[i-1]+nums[i];
-        }
-        int c=prefix[n-1];
+        int total_ones=accumulate(nums.begin(),nums.end(),0);
+        int c=total_ones;
         int num;
         unordered_map<int,vector<int>> mp;
-        mp[prefix[n-1]].push_back(0);
+        mp[c].push_back(0);
+        int curr_ones=0;
         for(int i=1;i<=n;i++)
         {
-        num=i-prefix[i-1]+prefix[n-1]-prefix[i-1];
+        curr_ones+=nums[i-1];
+        num=i-curr_ones+total_ones-curr_ones;
         c=max(c,num);
         mp[num].push_back(i);
         }
