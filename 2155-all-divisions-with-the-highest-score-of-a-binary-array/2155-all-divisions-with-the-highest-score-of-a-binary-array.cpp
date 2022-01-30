@@ -11,7 +11,7 @@ public:
         }
         int c=prefix[n-1];
         int num;
-        map<int,vector<int>> mp;
+        unordered_map<int,vector<int>> mp;
         mp[prefix[n-1]].push_back(0);
         for(int i=1;i<=n;i++)
         {
