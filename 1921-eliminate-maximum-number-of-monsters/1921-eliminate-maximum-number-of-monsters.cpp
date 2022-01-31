@@ -6,12 +6,13 @@ public:
         {
             dist[i]=(dist[i]-1)/speed[i];
         }
-        sort(dist.begin(),dist.end());
-        for(int i=0;i<n;i++)
+        priority_queue<int,vector<int>,greater<int> > pq(dist.begin(),dist.end());
+        int i=0;
+        while(i<n&&i<=pq.top())
         {
-            if(dist[i]<i)
-                return i;
+            i++;
+            pq.pop();
         }
-        return n;
+        return n-pq.size();
     }
 };
