@@ -2,15 +2,14 @@ class Solution {
 public:
     int eliminateMaximum(vector<int>& dist, vector<int>& speed) {
      int n=speed.size();
-        vector<int> time(n);
         for(int i=0;i<n;i++)
         {
-            time[i]=(dist[i]-1)/speed[i];
+            dist[i]=(dist[i]-1)/speed[i];
         }
-        sort(time.begin(),time.end());
+        sort(dist.begin(),dist.end());
         for(int i=0;i<n;i++)
         {
-            if(time[i]<i)
+            if(dist[i]<i)
                 return i;
         }
         return n;
