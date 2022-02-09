@@ -1,7 +1,7 @@
 class Solution {
 public:
     int findPairs(vector<int>& nums, int k) {
-        unordered_map<int,int> mp;
+        unordered_set<int> mp;
         int c=0;
         int n=nums.size();
         set<int> st;
@@ -11,16 +11,17 @@ public:
             {
             if(mp.find(nums[i]+k)!=mp.end())
             {
-                c+=mp[nums[i]+k];
+                c++;
+                if(k==0)
                 st.insert(nums[i]);
             }
             if(k!=0)
             if(mp.find(nums[i]-k)!=mp.end())
             {
-                c+=mp[nums[i]-k];
+                c++;
             }
             }
-            mp[nums[i]]=1;
+            mp.insert(nums[i]);
             if(k!=0)
             st.insert(nums[i]);
         }
