@@ -6,20 +6,17 @@ public:
         for(auto pile:piles)
         {
             pq.push(pile);
+            ans+=pile;
         }
         while(k--)
         {
             int topp=pq.top();
             pq.pop();
+            ans-=topp;
             int dec=floor((double)topp/2.0);
             int newPile=topp-dec;
+            ans+=newPile;
             pq.push(newPile);
-        }
-        
-        while(pq.size()>0)
-        {
-            ans+=pq.top();
-            pq.pop();
         }
         return ans;
     }
