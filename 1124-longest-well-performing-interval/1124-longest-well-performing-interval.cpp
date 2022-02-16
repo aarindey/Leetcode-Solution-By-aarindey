@@ -1,34 +1,27 @@
 class Solution {
 public:
     int longestWPI(vector<int>& hours) {
-      int n=hours.size(),ans=0,currSum=0;
-        unordered_map<int,int> mp;
-       for(int i=0;i<n;i++)
+      int n=hours.size(),ans=0;
+      stack<int> st;
+      vector<int> preSum(n+1,0);
+      for(int i=1;i<=n;i++)
+      {
+            preSum[i]=preSum[i-1]+(hours[i-1]>8?1:-1);
+      }
+       for(int i=0;i<=n;i++)
        {
-           if(hours[i]>8)
+           if(st.empty()||preSum[st.top()]>preSum[i])
            {
-               currSum++;
-           }
-           else
-           {
-               currSum--;
-           }  
-           if(currSum>0)
-           {
-               ans=max(ans,i+1);
-           }
-           else
-           {
-               if(mp.find(currSum-1)!=mp.end())
-               {
-                   ans=max(ans,i-mp[currSum-1]);
-               }
-           }
-           if(mp.find(currSum)==mp.end())
-           {
-               mp[currSum]=i;
+               st.push(i);
            }
        }
+        for(int i=n;i>=0;i--)
+        {
+           while (!st.empty() && preSum[st.top()] < preSum[i]) {
+                ans = max(ans, i - st.top());
+                st.pop();
+            } 
+        }
         return ans;
     }
 };
