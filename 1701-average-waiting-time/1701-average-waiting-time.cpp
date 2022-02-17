@@ -7,7 +7,6 @@ public:
     double total=0;
    for(auto customer:customers)
    {
-       
         if(currTime>=customer[0])
         {
         currTime+=customer[1];
