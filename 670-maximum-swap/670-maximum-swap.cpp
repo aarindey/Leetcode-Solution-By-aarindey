@@ -23,9 +23,7 @@ public:
         {
          if(digits[maxArray[i]]!=digits[i])
          {
-           int temp=digits[maxArray[i]];
-           digits[maxArray[i]]=digits[i];
-           digits[i]=temp;
+           swap(digits[maxArray[i]],digits[i]);
            break;
          }
         }
