@@ -10,16 +10,13 @@ public:
          {
              end=i;
          }
+         mini=min(mini,nums[n-i-1]);
+         if(mini<nums[n-i-1])
+         {
+            begin=n-i-1;
+         }
         }
-        for(int i=n-1;i>=0;i--)
-        {
-            mini=min(mini,nums[i]);
-            if(mini<nums[i])
-            {
-                begin=i;
-            }
-        }
-        if(begin==end)
+        if(begin==end&&begin==-1)
         return 0;
         return end-begin+1;
     }
