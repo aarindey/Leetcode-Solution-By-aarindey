@@ -1,15 +1,19 @@
 class Solution {
 public:
-   int removeCoveredIntervals(vector<vector<int>>& A) {
-        int res = 0, left = -1, right = -1;
-        sort(A.begin(), A.end());
-        for (auto& v: A) {
-            if (v[0] > left && v[1] > right) {
-                left = v[0];
-                ++res;
+    bool static comp(vector<int> &a,vector<int> &b)
+    {
+        return a[0]<b[0];
+    }
+   int removeCoveredIntervals(vector<vector<int>>& v){
+        int  ans=0, end=-1,begin=-1,n=v.size();
+        sort(v.begin(), v.end(),comp);
+        for (int i=0;i<n;i++) {
+            if (v[i][0]>begin&&v[i][1]>end) {
+                ++ans;
+                begin=v[i][0];
             }
-            right = max(right, v[1]);
+            end= max(end, v[i][1]);
         }
-        return res;
+        return ans;
     }
 };
