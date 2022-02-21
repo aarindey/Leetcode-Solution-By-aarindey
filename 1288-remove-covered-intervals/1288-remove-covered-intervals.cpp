@@ -8,7 +8,7 @@ public:
         int  ans=0, end=-1,begin=-1,n=v.size();
         sort(v.begin(), v.end(),comp);
         for (int i=0;i<n;i++) {
-            if (v[i][0]>begin&&v[i][1]>end) {
+            if (v[i][0]!=begin&&v[i][1]>end) {
                 ++ans;
                 begin=v[i][0];
             }
