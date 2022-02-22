@@ -15,7 +15,6 @@ public:
             mx=v[i].second;
         }
 
-        sort(v.begin(),v.end());
         
         int res=0;
         int m=worker.size();
