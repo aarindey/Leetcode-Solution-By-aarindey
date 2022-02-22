@@ -6,7 +6,7 @@ public:
         for(char ch:s)
         freq[ch-'a']++;
         int curr=0,k=0;
-        string ans(n+n,'-');
+        string ans(n,'-');
         set<int> idx;
         for(int i=25;i>=0;i--)
         {
@@ -18,7 +18,7 @@ public:
                 idx.erase(idx.begin());
             }
             if(idx.size()==0)
-            while(freq[i]>0)
+            while(freq[i]>0&&k<n)
             {
                 if(curr==repeatLimit)
                 {
