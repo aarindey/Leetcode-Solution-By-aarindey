@@ -10,6 +10,9 @@ public:
         if(n>=2)
         {
             maxTwo=log2(d[n-1]+d[n-2]);
+        }else
+        {
+            maxTwo=log2(d[n-1]);
         }
         for(ll i=0;i<n;i++)
         {
