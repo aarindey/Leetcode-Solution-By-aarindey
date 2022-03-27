@@ -1,3 +1,4 @@
+[Discussion Post (created on 27/2/2022 at 19:24)](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/discuss/1888899/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-Simple)  
 <h2>1337. The K Weakest Rows in a Matrix</h2><h3>Easy</h3><hr><div><p>You are given an <code>m x n</code> binary matrix <code>mat</code> of <code>1</code>'s (representing soldiers) and <code>0</code>'s (representing civilians). The soldiers are positioned <strong>in front</strong> of the civilians. That is, all the <code>1</code>'s will appear to the <strong>left</strong> of all the <code>0</code>'s in each row.</p>
 
 <p>A row <code>i</code> is <strong>weaker</strong> than a row <code>j</code> if one of the following is true:</p>
