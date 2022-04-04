@@ -8,18 +8,14 @@ public:
         {
             for(int j=0;j<m;j++)
             {
-                if(s[i]!=t[j])
+                int miss=0;
+                for(int p=0;i+p<n&&j+p<m;p++)
                 {
-                    int left=1,right=1;
-                    while(i-left>=0&&j-left>=0&&s[i-left]==t[j-left])
+                    if(s[i+p]!=t[j+p]&&++miss>1)
                     {
-                        ++left;
+                        break;
                     }
-                    while((i+right)<n&&(j+right)<m&&s[i+right]==t[j+right])
-                    {
-                        ++right;
-                    }
-                    ans+=(left*right);
+                    ans+=miss;
                 }
             }
         }
