@@ -11,8 +11,10 @@ public:
                 int miss=0;
                 for(int p=0;i+p<n&&j+p<m;p++)
                 {
-                    if(s[i+p]!=t[j+p]&&++miss>1)
+                    if(s[i+p]!=t[j+p])
                     {
+                        miss++;
+                        if(miss>=2)
                         break;
                     }
                     ans+=miss;
