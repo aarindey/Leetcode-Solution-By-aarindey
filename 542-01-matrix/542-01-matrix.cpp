@@ -2,9 +2,7 @@ class Solution {
 public:
     bool isValid(int i,int j,int n,int m)
     {
-        if(i==n||j==m||j<0||i<0)
-        return false;
-        return true;
+        return (i>=0&&j>=0&&i<n&&j<m);
     }
     vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
         int n=mat.size();
