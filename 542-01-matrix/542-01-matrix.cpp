@@ -10,11 +10,11 @@ public:
         int n=mat.size();
         int m=mat[0].size();
         vector<vector<int> > ans(n,vector<int>(m,-1));
-        vector<vector<int>> dis;
-        dis.push_back({1,0});
-        dis.push_back({0,1});
-        dis.push_back({-1,0});
-        dis.push_back({0,-1});
+        vector<vector<int>> dir;
+        dir.push_back({1,0});
+        dir.push_back({0,1});
+        dir.push_back({-1,0});
+        dir.push_back({0,-1});
         queue<pair<int,int> > q;
         for(int i=0;i<n;i++)
         {
@@ -34,8 +34,8 @@ public:
             q.pop();
             for(int i=0;i<4;i++)
             {
-                int x=ele.first+dis[i][0];
-                int y=ele.second+dis[i][1];
+                int x=ele.first+dir[i][0];
+                int y=ele.second+dir[i][1];
                 if(isValid(x,y,n,m)&&ans[x][y]==-1)
                 {
                     ans[x][y]=ans[ele.first][ele.second]+1;
