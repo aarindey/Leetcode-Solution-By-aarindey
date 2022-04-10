@@ -23,17 +23,18 @@ public:
                 }
                 myStack.push(sum);
             }
-                             else
-                             {
-                                 int x=stoi(ops[i]);
-                             myStack.push(x);
-           }}
-                             int sum=0;
-                             while(!myStack.empty())
-                             {
-                                 sum+=myStack.top();
-                                 myStack.pop();
-                             }
-                             return sum;
+            else
+            {
+                int x=stoi(ops[i]);
+                myStack.push(x);
+            }
+         }
+         int sum=0;
+         while(!myStack.empty())
+         {
+               sum+=myStack.top();
+               myStack.pop();
+         }
+        return sum;
     }
 };
