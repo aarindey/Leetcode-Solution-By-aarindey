@@ -7,12 +7,13 @@ public:
         {
             pq.push(num);
         }
+        bool ok=true;
         while(k--)
         {
-            int ele=pq.top();
-            pq.pop();
-            ele++;
-            pq.push(ele);
+               int ele=pq.top();
+               pq.pop();
+               ele++;
+               pq.push(ele);
         }
         int ans=1;
         while(!pq.empty())
