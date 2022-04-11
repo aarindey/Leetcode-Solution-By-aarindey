@@ -1,12 +1,6 @@
 class Solution {
 public:
     vector<string> findAllRecipes(vector<string>& recipes, vector<vector<string>>& ingredients, vector<string>& supplies) {
-      map<string,vector<string> > mp;
-        int n=recipes.size();
-        for(int i=0;i<n;i++)
-        {
-            mp[recipes[i]]=ingredients[i];
-        }
         unordered_set<string> avail(supplies.begin(),supplies.end());
         vector<string> ans;
         while(recipes.size()!=0)
@@ -15,7 +9,7 @@ public:
             for(int i=0;i<recipes.size();i++)
             {
                 bool ok=true;
-                for(auto &s:mp[recipes[i]])
+                for(auto &s:ingredients[i])
                 {
                     if(avail.find(s)==avail.end())
                     {
@@ -28,6 +22,7 @@ public:
                     ans.push_back(recipes[i]);
                     avail.insert(recipes[i]);
                     recipes.erase(recipes.begin()+i);
+                    ingredients.erase(ingredients.begin()+i);
                     c++;
                 }
             }
