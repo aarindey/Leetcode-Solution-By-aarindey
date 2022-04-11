@@ -1,16 +1,24 @@
 class Solution {
 public:
-    void dfs(vector<bool> &vis,int i,vector<vector<int> > &v)
+    void bfs(vector<bool> &vis,int i,vector<vector<int> > &v)
     {
         int n=vis.size();
-        if(vis[i])
-        return;
-        vis[i]=true;
-        for(int j=0;j<n;j++)
+        queue<int> q;
+        q.push(i);
+        while(!q.empty())
         {
-            if(v[i][j])
+            int ele=q.front();
+            q.pop();
+            if(vis[ele])
+            continue;
+            
+            vis[ele]=true;
+            for(int j=0;j<n;j++)
             {
-            dfs(vis,j,v);
+                if(v[ele][j]==1&&!vis[j])
+                {
+                q.push(j);
+                }
             }
         }
     }
@@ -21,7 +29,7 @@ public:
         {
           if(!vis[i])
           {
-              dfs(vis,i,v);
+              bfs(vis,i,v);
               c++;
           }
         }
