@@ -4,12 +4,12 @@ public:
         vector<bool> dp(n+1,false);
         for(int i=1;i<=n;i++)
         {
-            bool res=false;
+            bool res=true;
             for(int j=1;j*j<=i;j++)
             {
-                res|=!(dp[i-j*j]);
+                res&=(dp[i-j*j]);
             }
-            dp[i]=res;
+            dp[i]=!res;
         }
         return dp[n];
     }
