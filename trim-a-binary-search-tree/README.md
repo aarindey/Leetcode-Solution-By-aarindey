@@ -1,3 +1,4 @@
+[Discussion Post (created on 15/3/2022 at 23:51)](https://leetcode.com/problems/trim-a-binary-search-tree/discuss/1950712/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-recursive)  
 <h2>669. Trim a Binary Search Tree</h2><h3>Medium</h3><hr><div><p>Given the <code>root</code> of a binary search tree and the lowest and highest boundaries as <code>low</code> and <code>high</code>, trim the tree so that all its elements lies in <code>[low, high]</code>. Trimming the tree should <strong>not</strong> change the relative structure of the elements that will remain in the tree (i.e., any node's descendant should remain a descendant). It can be proven that there is a <strong>unique answer</strong>.</p>
 
 <p>Return <em>the root of the trimmed binary search tree</em>. Note that the root may change depending on the given bounds.</p>
