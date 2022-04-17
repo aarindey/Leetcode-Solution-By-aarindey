@@ -1,3 +1,4 @@
+[Discussion Post (created on 17/3/2022 at 19:36)](https://leetcode.com/problems/increasing-order-search-tree/discuss/1957519/C%2B%2B-oror-EASY-TO-UNDERSTAND-oror-Simple-Solution)  
 <h2>897. Increasing Order Search Tree</h2><h3>Easy</h3><hr><div><p>Given the <code>root</code> of a binary search tree, rearrange the tree in <strong>in-order</strong> so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child.</p>
 
 <p>&nbsp;</p>
