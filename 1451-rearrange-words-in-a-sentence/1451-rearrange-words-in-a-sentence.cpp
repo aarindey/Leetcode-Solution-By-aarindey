@@ -1,5 +1,10 @@
+#include<algorithm>
 class Solution {
 public:
+    bool static comp(string a,string b)
+    {
+        return a.size()<b.size();
+    }
     string arrangeWords(string s) {
         s+=' ';
         int n=s.size();
@@ -14,7 +19,7 @@ public:
                 v.push_back(str);
             }
         }
-        stable_sort(v.begin(),v.end(), [](const auto &s1, const auto &s2) { return s1.length() < s2.length(); });
+        stable_sort(v.begin(),v.end(),comp);
         string ans="";
         n=v.size();
         for(int i=0;i<n;i++)
