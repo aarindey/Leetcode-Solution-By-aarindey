@@ -12,7 +12,6 @@ class Solution {
 public:
     int numComponents(ListNode* head, vector<int>& nums) {
         ListNode* temp=head;
-        int count=0;
         int com=0;
         bool ok=true;
         while(temp)
@@ -20,7 +19,6 @@ public:
             int x=temp->val;
             if(find(nums.begin(),nums.end(),x)!=nums.end())
             {
-                count++;
                 if(ok)
                 {
                 com++;
@@ -29,7 +27,6 @@ public:
             }
             else
             {
-                count=0;
                 ok=true;
             }
             temp=temp->next;
