@@ -19,7 +19,6 @@ public:
             }
             else 
             {
-                if(i<n)
                 m.erase(m.find(nums[i]));
                 i++;
             }
