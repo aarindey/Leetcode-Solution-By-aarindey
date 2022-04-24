@@ -1,6 +1,6 @@
 class Solution 
 {
-public:
+    public:
     vector<vector<string>> displayTable(vector<vector<string>>& orders){
         set<string> s;
         map<int,vector<string>> mp2;
@@ -20,7 +20,6 @@ public:
             temp.push_back(*it);
         }
         ans.push_back(temp);
-        
         for(auto pr:mp2)
         {
             temp.clear();
