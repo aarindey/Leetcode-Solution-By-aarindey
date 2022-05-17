@@ -11,13 +11,16 @@ public:
         for(int i=0;i<z;i++)
         {
             int curr_or=0;
-            int k=0;
-            for(int j=0;j<17;j++)
+            int k=0,idx=0;
+            int j=i;
+            while(j)
             {
-                if(i&(1<<j))
+                if(j&1)
                 {
-                curr_or|=nums[j];
+                    curr_or|=nums[idx];
                 }
+                idx++;
+                j=j>>1;
             }
             if(curr_or==max_or)
             ans++;
