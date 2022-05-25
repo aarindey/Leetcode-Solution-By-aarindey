@@ -14,7 +14,8 @@ public:
         int idx = lower_bound(lis.begin(), lis.end(), ele) - lis.begin();    
         if(idx >= lis.size())
         lis.push_back(ele);
-        else lis[idx] = ele;
+        else 
+        lis[idx] = ele;
         }
         
         return lis.size();
