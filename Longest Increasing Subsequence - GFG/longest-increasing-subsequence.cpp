@@ -11,21 +11,22 @@ class Solution
     //Function to find length of longest increasing subsequence.
     int longestSubsequence(int n, int a[])
     {
- // Time Complexity O(NxN)
- vector<int> dp(n,1);
- int ans=1;
- for(int i=1;i<n;i++)
- {
-     for(int j=0;j<i;j++)
-     {
-         if(a[i]>a[j])
-         {
-             dp[i]=max(dp[i],1+dp[j]);
-         }
-         ans=max(ans,dp[i]);
-     }
- }
- return ans;
+ // Time Complexity O(NxLog N)
+vector<int> temp;
+temp.push_back(a[0]);
+for(int i=1;i<n;i++)
+{
+    if(temp.back()<a[i])
+    {
+        temp.push_back(a[i]);
+    }
+    else
+    {
+        int idx=lower_bound(temp.begin(),temp.end(),a[i])-temp.begin();
+        temp[idx]=a[i];
+    }
+}
+return temp.size();
     }
 };
 
