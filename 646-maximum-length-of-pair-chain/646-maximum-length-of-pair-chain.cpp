@@ -4,18 +4,23 @@ public:
         sort(pairs.begin(),pairs.end());
         int ans=1;
         int n=pairs.size();
-        vector<int> dp(n,1);
+        vector<int> t;
+        t.push_back(pairs[0][1]);
+ 
         for(int i=1;i<n;i++)
         {
-            for(int j=0;j<i;j++)
+            int idx=lower_bound(t.begin(),t.end(),pairs[i][0])-t.begin();
+            if(idx==t.size())
             {
-                if(pairs[i][0]>pairs[j][1])
-                {
-                    dp[i]=max(dp[i],1+dp[j]);
-                }
-                ans=max(ans,dp[i]);
+                t.push_back(pairs[i][1]);
+            }
+            else
+            {
+                if(t[idx]>pairs[i][1])
+                t[idx]=pairs[i][1];
             }
         }
-        return ans;
+        return t.size();
     }
 };
+
