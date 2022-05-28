@@ -48,7 +48,6 @@ public:
             temp1=temp2;
         }
         int ans=INT_MIN;
-        n=temp1.size();
         for(int i=0;i<n;i++)
         {
             ans=max(ans,temp1[i]);
