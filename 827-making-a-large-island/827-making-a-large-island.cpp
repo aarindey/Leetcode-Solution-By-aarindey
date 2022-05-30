@@ -17,7 +17,7 @@ public:
     int largestIsland(vector<vector<int>>& grid) {
         int n=grid.size();
         int gridID=2;
-        map<int,int> area;
+        unordered_map<int,int> area;
         bool ok=false;
         for(int i=0;i<n;i++)
         {
