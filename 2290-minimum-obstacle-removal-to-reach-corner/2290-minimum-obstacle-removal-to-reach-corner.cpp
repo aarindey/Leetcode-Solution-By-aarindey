@@ -11,6 +11,7 @@ public:
         int n=grid.size();
         int m=grid[0].size();
         vector<vector<int> > dis(n,vector<int> (m,INT_MAX));
+        vector<vector<bool> > vis(n,vector<bool> (m,false));
         pq.push({0,{0,0}});
         dis[0][0]=0;
         while(!pq.empty())
@@ -21,6 +22,7 @@ public:
             cost=ele.first;
             x=ele.second.first;
             y=ele.second.second;
+            vis[x][y]=true;
             if(x==n-1&&y==m-1)
             return cost;
             for(auto pr:dir)
@@ -28,7 +30,7 @@ public:
                 int next_x,next_y;
                 next_x=x+pr.first;
                 next_y=y+pr.second;
-                if(next_x>=0&&next_x<n&&next_y>=0&&next_y<m&&cost+grid[next_x][next_y]<dis[next_x][next_y])
+                if(next_x>=0&&next_x<n&&next_y>=0&&next_y<m&&cost+grid[next_x][next_y]<dis[next_x][next_y]&&!vis[next_x][next_y])
                 {
                     dis[next_x][next_y]=cost+grid[next_x][next_y];
                     pq.push({dis[next_x][next_y],{next_x,next_y}});
