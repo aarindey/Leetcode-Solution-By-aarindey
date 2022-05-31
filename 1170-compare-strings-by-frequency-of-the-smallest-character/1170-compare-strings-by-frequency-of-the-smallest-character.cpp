@@ -17,7 +17,6 @@ public:
                     ans=v[idx];
                 }
             }
-            cout<<ans<<endl;
             f.push_back(ans);
         }
         sort(f.begin(),f.end());
