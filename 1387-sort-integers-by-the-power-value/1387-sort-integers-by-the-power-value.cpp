@@ -1,29 +1,24 @@
 class Solution {
 public:
-    int solve(int num,vector<int> &memo)
-    {
-        if(num<=1)
-        return 0;
-        if(memo[num]!=-1)
-        return memo[num];
-        if(num%2==0)
-        {
-            return memo[num]=1+solve(num/2,memo);
-        }
-        else
-        {
-            return memo[num]=1+solve(num*3+1,memo);
-        }
-        return 0;
-    }
     int getKth(int lo, int hi, int k) {
-        vector<int> memo(1000000,-1);
-        vector<pair<int,int>> ans;
-        for(int i=lo;i<=hi;i++)
-        {
-            ans.push_back({solve(i,memo),i});
+        vector<pair<int,int>> v;
+        for(int i=lo;i<=hi;i++){
+            v.push_back({power(i),i});
         }
-        sort(ans.begin(),ans.end());
-        return ans[k-1].second;
+        sort(v.begin(),v.end());
+        return v[k-1].second;
+    }
+    int power(int num){
+        int cnt=0;
+        while(num!=1){
+            if(num%2==0){
+                num=num/2;
+            }
+            else{
+                num=3*num+1;
+            }
+            cnt++;
+        }
+        return cnt;
     }
 };
