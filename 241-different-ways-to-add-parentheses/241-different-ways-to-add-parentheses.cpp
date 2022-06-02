@@ -22,7 +22,7 @@ public:
                         }
                         if(s[k]=='-')
                         {
-                            ans.push_back(v1[i2]-(v2[j2]));
+                            ans.push_back(v1[i2]-v2[j2]);
                         }
                         if(s[k]=='*')
                         {
