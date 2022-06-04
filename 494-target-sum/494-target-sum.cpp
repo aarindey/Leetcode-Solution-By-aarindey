@@ -1,22 +1,34 @@
 class Solution {
 public:
-    int count=0;
-    void solve(vector<int> &nums,int i,int n,int sum,int target)
+    int total=0;
+    int solve(vector<int> &nums,int i,int n,int sum,int target,vector<vector<int> > &memo)
     {
         if(i==n)
         {
             if(sum==target)
             {
-                count++;
+                return 1;
             }
-            return;
+            else
+            {
+                return 0;
+            }
         }
-        
-        solve(nums,i+1,n,sum+nums[i],target);
-        solve(nums,i+1,n,sum-nums[i],target);     
+        else
+        {
+        if(memo[i][total+sum]!=INT_MIN)
+        {
+            return memo[i][total+sum];
+        }
+        int add=solve(nums,i+1,n,sum+nums[i],target,memo);
+        int sub=solve(nums,i+1,n,sum-nums[i],target,memo);     
+        return memo[i][sum+total]=add+sub;
+        }
     }
     int findTargetSumWays(vector<int>& nums, int target) {
-        solve(nums,0,nums.size(),0,target);
-        return count;
+        total=accumulate(nums.begin(),nums.end(),(long long)0);
+        int n=nums.size();
+        vector<vector<int>> memo(n+1,vector<int>(total*2+1,INT_MIN));
+        return solve(nums,0,nums.size(),0,target,memo);
     }
 };
