@@ -1,63 +1,37 @@
 class Solution {
 public:
-    bool isSafe(int row,int col,vector<string> &v,int n)
+    void solve(vector<vector<string>> &ans,vector<string> &v,int col,int n,vector<int> &rowHash,vector<int> &lowerDiag,vector<int> &upperDiag)
+{
+    if(col==n)
     {
-        int row1=row,col1=col;
-        while(row>=0&&col>=0)
-        {
-         if(v[row][col]=='Q')
-             return false;
-            row--;
-            col--;
-        }
-        row=row1;
-        col=col1;
-        while(col>=0)
-        {
-            if(v[row][col]=='Q')
-            {
-                return false;
-            }
-            col--;
-        }
-        row=row1;
-        col=col1;
-        while(col>=0&&row<n)
-        {
-            if(v[row][col]=='Q')
-                return false;
-            row++;
-            col--;
-        }
-        return true;
+        ans.push_back(v);
+        return;
     }
-    void solve(int col,vector<string> &v,vector<vector<string>> &ans,int n)
+    for(int row=0;row<n;row++)
     {
-        if(col==n)
+        if(rowHash[row]==0&&lowerDiag[row+col]==0&&upperDiag[n-1+col-row]==0)
         {
-            ans.push_back(v);
-            return;
+            v[row][col]='Q';
+            rowHash[row]=1;
+            lowerDiag[row+col]=1;
+            upperDiag[n-1+col-row]=1;
+            solve(ans,v,col+1,n,rowHash,lowerDiag,upperDiag);
+            v[row][col]='.';
+            rowHash[row]=0;
+            lowerDiag[row+col]=0;
+            upperDiag[n-1+col-row]=0;
         }
-        for(int row=0;row<n;row++)
-        {
-            if(isSafe(row,col,v,n))
-            {
-                v[row][col]='Q';
-                solve(col+1,v,ans,n);
-                v[row][col]='.';
-            }
-        }
-        
     }
-    vector<vector<string>> solveNQueens(int n) {
-        string s(n,'.');
-        vector<string> v(n);
-        vector<vector<string>> ans;
-        for(int i=0;i<n;i++)
-        {
-            v[i]=s;
-        }
-        solve(0,v,ans,n);
-        return ans;
-    }
+}
+vector<vector<string>> solveNQueens(int n) {
+    vector<vector<string>> ans;
+    
+    string s(n,'.');
+    vector<string> v(n,s);
+    vector<int> rowHash(n,0);
+    vector<int> lowerDiag(2*n-1,0);
+    vector<int> upperDiag(2*n-1,0);
+    solve(ans,v,0,n,rowHash,lowerDiag,upperDiag);
+    return ans;        
+}
 };
