@@ -2,7 +2,7 @@
 class Solution {
 public:
     set<pair<ll,ll>> st;
-    map<ll,ll> rowHash,colHash,lowerDiag,upperDiag;
+    unordered_map<ll,ll> rowHash,colHash,lowerDiag,upperDiag;
     bool isvalid(int x,int y,int n)
     {
         return (x>=0&&x<n&&y>=0&&y<n);
