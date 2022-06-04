@@ -20,8 +20,9 @@ public:
         {
             return memo[i][total+sum];
         }
-        int add=solve(nums,i+1,n,sum+nums[i],target,memo);
-        int sub=solve(nums,i+1,n,sum-nums[i],target,memo);     
+        int add=0,sub=0;
+        add+=solve(nums,i+1,n,sum+nums[i],target,memo);
+        sub+=solve(nums,i+1,n,sum-nums[i],target,memo);     
         return memo[i][sum+total]=add+sub;
         }
     }
