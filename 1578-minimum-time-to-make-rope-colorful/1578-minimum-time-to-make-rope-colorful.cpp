@@ -1,28 +1,20 @@
 class Solution {
 public:
     int minCost(string s, vector<int>& time) {
-       int n=s.size();
-        int ans=0;
-        bool ok;
-       for(int i=1;i<n;i++)
-       {
-           ok=false;
-           vector<int> v;
-           v.push_back(time[i-1]);
-            while(s[i-1]==s[i])
+        int n=s.size();
+        int ans=0,sum=0,maxi=0;
+        for(int i=0;i<n;i++)
+        {
+            if(i>0&&s[i]!=s[i-1])
             {
-                v.push_back(time[i]);
-                i++;
-                ok=true;
+                ans+=sum-maxi;
+                maxi=0;
+                sum=0;
             }
-            if(ok)
-            {
-            sort(v.begin(),v.end());
-            i--;
-            for(int k=0;k<v.size()-1;k++)
-            ans+=v[k];
-            }
-       }
+            sum+=time[i];
+            maxi=max(maxi,time[i]);
+        }
+        ans+=sum-maxi;
         return ans;
     }
 };
