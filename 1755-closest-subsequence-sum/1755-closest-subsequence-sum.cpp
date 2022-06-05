@@ -33,18 +33,10 @@ public:
     }
     int findGreater(vector<int> &v,int x)
     {
-        int low=0,high=v.size()-1;
-        int ans=v.size()-1;
-        while(low<=high){
-            int mid=low+(high-low)/2;
-            if(v[mid]>=x){
-                ans=mid;
-                high=mid-1;
-            }
-            else
-                low=mid+1;
-        }   
-        return v[ans];
+        int idx=lower_bound(v.begin(),v.end(),x)-v.begin();
+        if(idx==v.size())
+        return v[idx-1];
+        return v[idx];
     }
     int minAbsDifference(vector<int>& nums, int goal) {
       int n=nums.size();
