@@ -4,8 +4,6 @@ public:
         
         int n=arr.size();
         vector<pair<int,int>> v(n);
-        //int maxi=0;
-        //int ans=0;
         for(int i=0;i<n;i++)
         {
             v[i].first=arr[i];
@@ -25,8 +23,7 @@ public:
             {
                 ans++;
             }
-        }
-            
+        }    
         return ans;
     }
 };
