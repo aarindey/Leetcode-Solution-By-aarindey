@@ -13,26 +13,20 @@ public:
             mp[arr[i]].push_back(i);
         }
         vector<ll> ans(n);
-        
         for(auto pr:mp)
         {
-            ll res=0;
             vector<ll> v=pr.second;
+            ll total=accumulate(v.begin(),v.end(),(ll)0);
             ll pre=0;
-            ll total=0;
-            for(auto &x:v)
+            ll n2=v.size();
+            ll res=0;
+            for(ll i=0;i<n2;i++)
             {
-                total+=x;
-            }
-            for(ll i=0;i<v.size();i++)
-            {
-                res=abs((i)*(v[i])-pre)+abbs((total-pre-v[i])-(v.size()-i-1)*v[i]);
-                ans[v[i]]=res;
+                res=abs(i*v[i]-pre)+abs((total-pre-v[i])-(n2-i-1)*v[i]);
                 pre+=v[i];
+                ans[v[i]]=res;
             }
-            
         }
-        
         return ans;
     }
 };
