@@ -2,7 +2,7 @@ class Solution {
 public:
     #define ll long long int
     vector<long long> getDistances(vector<int>& arr) {
-     map<ll,vector<ll>> mp;
+     unordered_map<ll,vector<ll>> mp;
         ll n=arr.size();
         for(ll i=0;i<n;i++)
         {
