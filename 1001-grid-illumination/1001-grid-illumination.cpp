@@ -41,13 +41,6 @@ public:
     }
     vector<int> gridIllumination(int n, vector<vector<int>>& lamps, vector<vector<int>>& queries) {
         vector<int> ans;
-        /*
-        vector<int> rowHash(n,0);
-        vector<int> colHash(n,0);
-        vector<int> lowerDiag(2*n-1,0);
-        vector<int> upperDiag(2*n-1,0);
-        */
-        //vector<vector<int>> board(n,vector<int>(n,0));
         for(auto v:lamps)
         {
             if(st.find({v[0],v[1]})==st.end())
