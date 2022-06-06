@@ -16,6 +16,8 @@ public:
              }   
          }   
      }   
-        return *max_element( lis.begin(),lis.end() ) ;
+    if(maxi==0)
+    return 1;
+    return maxi;
     }
 };
