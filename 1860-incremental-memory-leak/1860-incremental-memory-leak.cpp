@@ -1,7 +1,6 @@
 class Solution {
 public:
     vector<int> memLeak(int memory1, int memory2) {
-        vector<int> ans;
         int i=1;
         int c=1;
         while(max(memory1,memory2)>=i)
@@ -14,7 +13,6 @@ public:
             {
                 memory2-=i;
             }
-            
             c++;
             i++;
         }
