@@ -1,4 +1,3 @@
-
 struct node{
     int x;
     int y;
