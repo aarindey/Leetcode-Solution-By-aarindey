@@ -13,7 +13,6 @@ public:
         q.push({num,0});
         int steps=0;
         vector<bool> visited(n*n+1,false);
-       // int c=0;
         visited[1]=true;
         while(!q.empty())
         {
@@ -21,9 +20,6 @@ public:
             q.pop();
             num=ele.first;
             steps=ele.second;
-            // if(num==n*n)
-            // return steps;
-          
             for(int i=1;i<=6;i++)
             {
                 int new_num=num+i;
