@@ -5,7 +5,7 @@ public:
         vector<int> dx,dy;
         dx={0,0,1,-1};
         dy={1,-1,0,0};
-        int maxArea=numBlocked*(numBlocked-1)/2;
+        int maxArea=31500;
         int currArea=1;
         set<pair<int,int>> visited;
         queue<pair<int,int>> q;
