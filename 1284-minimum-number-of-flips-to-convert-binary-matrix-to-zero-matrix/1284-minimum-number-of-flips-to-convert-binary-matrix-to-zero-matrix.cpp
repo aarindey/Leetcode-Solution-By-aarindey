@@ -64,15 +64,6 @@ public:
                     return steps+1;
                     if(st.find(v2)==st.end())
                     {
-                       //  cout<<"steps "<<steps+1<<endl;
-                       // for(int i=0;i<n;i++)
-                       // {
-                       //  for(int j=0;j<m;j++)
-                       //  {
-                       //      cout<<v2[i][j]<<" ";
-                       //  }
-                       //  cout<<endl;
-                       //  }
                         q.push({v2,steps+1});
                         st.insert(v2);
                     }
