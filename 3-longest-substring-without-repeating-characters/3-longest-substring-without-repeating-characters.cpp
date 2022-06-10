@@ -10,7 +10,7 @@ public:
             {
                 left=max(left,v[s[right]]+1);
             }
-           v[s[right]]=right;
+            v[s[right]]=right;
             len=max(len,right-left+1);
             right++;   
         }
