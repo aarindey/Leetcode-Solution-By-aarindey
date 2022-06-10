@@ -12,7 +12,6 @@ public:
             if(j-i+1==mp.size())
             {
                 ans=max(ans,sum);
-                j++;
             }
             else if(j-i+1>mp.size())
             {
@@ -26,9 +25,8 @@ public:
                     }
                     i++;
                 }
-                j++;
             }
-            //j++;
+            j++;
         }
         return ans;
     }
