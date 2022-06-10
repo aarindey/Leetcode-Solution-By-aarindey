@@ -9,7 +9,10 @@ public:
         }
         for(auto pr:mp)
         {
-        
+            if(pr.first==0)
+            ans+=pr.second;
+            else
+            {
                 int d=pr.second/(pr.first+1);
                 int r=pr.second%(pr.first+1);
                 ans+=d*(pr.first+1);
@@ -17,7 +20,7 @@ public:
                 {
                     ans+=pr.first+1;
                 }   
-            
+            }
         }
         return ans;
     }
