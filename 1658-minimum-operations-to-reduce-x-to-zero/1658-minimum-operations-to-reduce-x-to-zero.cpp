@@ -1,50 +1,49 @@
+#define ll long long int
 class Solution {
 public:
     int minOperations(vector<int>& nums, int x) {
         int n=nums.size();
-        vector<int> pre(n,0);
-        vector<int> suff(n,0);
-        pre[0]=nums[0];
-        suff[n-1]=nums[n-1];
+        vector<ll> prefix(n,0);
+        prefix[0]=nums[0];
         for(int i=1;i<n;i++)
         {
-            pre[i]=pre[i-1]+nums[i];
+            prefix[i]=prefix[i-1]+nums[i];
         }
-        for(int i=n-2;i>=0;i--)
+        int total=prefix[n-1];
+        if(total==x)
+        return n;
+        if(x>total)
+        return -1;
+        unordered_map<int,int> mp;
+        mp[0]=0;
+        int target=total-x;
+        int ans=INT_MIN;
+
+        for(int i=0;i<n;i++)
         {
-            suff[i]=suff[i+1]+nums[i];
-        }
-        int count=INT_MAX;
-        for(int i=n-1;i>=0;i--)
-        {
-            if(suff[i]>x)
+            mp[prefix[i]]=i;
+            
+            if(prefix[i]==target)
             {
-                break;
+                ans=max(ans,i+1);
             }
-            if(suff[i]==x)
+            if(prefix[i]==(total-target))
             {
-                count=min(count,n-i);
+                ans=max(ans,n-i-1);
             }
-            else
+            if(prefix[i]>target)
             {
-                int idx=lower_bound(pre.begin(),pre.end(),x-suff[i])-pre.begin();
-                if(idx<i&&pre[idx]+suff[i]==x)
+                if(mp.find(prefix[i]-target)!=mp.end())
                 {
-                    count=min(count,idx+1+n-i);
+                    ans=max(ans,i-mp[prefix[i]-target]);
                 }
             }
         }
-        for(int i=0;i<n;i++)
-        {
-            if(pre[i]>x)
-            {
-                break;
-            }
-            if(pre[i]==x)
-            {
-                count=min(count,i+1);
-            }
-        }
-        return count==INT_MAX?-1:count;
+        
+        return (ans==INT_MIN)?-1:(n-ans);
     }
 };
+/*
+[5,2,3,1,1]
+5
+*/
