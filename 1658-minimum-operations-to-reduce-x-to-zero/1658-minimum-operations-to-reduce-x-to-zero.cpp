@@ -3,13 +3,7 @@ class Solution {
 public:
     int minOperations(vector<int>& nums, int x) {
         int n=nums.size();
-        vector<ll> prefix(n,0);
-        prefix[0]=nums[0];
-        for(int i=1;i<n;i++)
-        {
-            prefix[i]=prefix[i-1]+nums[i];
-        }
-        int total=prefix[n-1];
+        int total=accumulate(nums.begin(),nums.end(),0);
         if(total==x)
         return n;
         if(x>total)
@@ -18,24 +12,25 @@ public:
         mp[0]=0;
         int target=total-x;
         int ans=INT_MIN;
-
+        int curr=0;
         for(int i=0;i<n;i++)
         {
-            mp[prefix[i]]=i;
+            curr+=nums[i];
+            mp[curr]=i;
             
-            if(prefix[i]==target)
+            if(curr==target)
             {
                 ans=max(ans,i+1);
             }
-            if(prefix[i]==(total-target))
+            if(curr==(total-target))
             {
                 ans=max(ans,n-i-1);
             }
-            if(prefix[i]>target)
+            if(curr>target)
             {
-                if(mp.find(prefix[i]-target)!=mp.end())
+                if(mp.find(curr-target)!=mp.end())
                 {
-                    ans=max(ans,i-mp[prefix[i]-target]);
+                    ans=max(ans,i-mp[curr-target]);
                 }
             }
         }
@@ -43,7 +38,3 @@ public:
         return (ans==INT_MIN)?-1:(n-ans);
     }
 };
-/*
-[5,2,3,1,1]
-5
-*/
