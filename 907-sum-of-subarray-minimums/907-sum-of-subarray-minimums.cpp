@@ -9,15 +9,13 @@ public:
         for(int i=n-1;i>=0;i--){
             while(!st.empty() && nums[i]<=nums[st.top()])
                 st.pop();
-            if(st.empty())
+            if(st.size()>0)
             {
-                nsr[i]=n;
+                nsr[i]=st.top();
                 st.push(i);
-                continue;
             }
             else
             {
-                nsr[i]=st.top();
                 st.push(i);
             }
         }
@@ -30,15 +28,13 @@ public:
         for(int i=0;i<n;i++){
             while(!st.empty() && nums[i]<nums[st.top()])
                 st.pop();
-            if(st.empty())
+            if(st.size()>0)
             {
-                nsl[i]=-1;
+                nsl[i]=st.top();
                 st.push(i);
-                continue;
             }
             else
             {
-                nsl[i]=st.top();
                 st.push(i);
             }
         }
