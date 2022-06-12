@@ -10,17 +10,11 @@ public:
             taxable=brackets[i][0]-brackets[i-1][0];
             else
             taxable=brackets[i][0];
-            if(i==0&&income>=taxable)
+            if(income>=taxable)
             {
                 ll tax=taxable*brackets[i][1];
                 ans+=((double)tax/100.0);
-                income-=brackets[i][0];
-            }
-            else if(i!=0&&income>=taxable)
-            {
-                ll tax=taxable*brackets[i][1];
-                ans+=((double)tax/100.0);
-                income-=taxable;  
+                income-=taxable; 
             }
             else if(income>0)
             {
