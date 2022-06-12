@@ -1,12 +1,11 @@
 class Solution {
 public:
     unordered_map<string,int> dp;
-    string encode(vector<int> &session,int i)
+    string encode(vector<int> session,int i)
     {
-        vector<int> v=session;
-        sort(v.begin(),v.end());
+        sort(session.begin(),session.end());
         string key="";
-        for(auto s:v)
+        for(auto s:session)
         {
             key+=to_string(s);
             key+="#";
