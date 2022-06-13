@@ -8,10 +8,11 @@ public:
             ans.push_back(v);
             return;
         }   
-        recurse(i+1,v,ans,nums);
+        
         v.push_back(nums[i]);
         recurse(i+1,v,ans,nums);
         v.pop_back();
+        recurse(i+1,v,ans,nums);
     }
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
         vector<int> empty;
