@@ -1,28 +1,30 @@
 class Solution {
 public:
-    void dfs(int i,int j,int n,int m,vector<vector<int>> &grid1,vector<vector<int>> &grid2,bool &ok)
+    bool dfs(int i,int j,int n,int m,vector<vector<int>> &grid1,vector<vector<int>> &grid2)
     {
         if(i<0||j<0||i>=n||j>=m)
         {
-            return;
+            return true;
         }
         if(grid2[i][j]==0)
         {
-            return;
+            return true;
         }
         else
         {
             if(grid1[i][j]==0)
             {
-                ok=false;
-                return;
+                return false;
             }
         }
         grid2[i][j]=0;
-        dfs(i+1,j,n,m,grid1,grid2,ok);
-        dfs(i,j+1,n,m,grid1,grid2,ok);
-        dfs(i-1,j,n,m,grid1,grid2,ok);
-        dfs(i,j-1,n,m,grid1,grid2,ok);
+        bool ans=true;
+        
+        ans&=dfs(i+1,j,n,m,grid1,grid2);
+        ans&=dfs(i,j+1,n,m,grid1,grid2);
+        ans&=dfs(i-1,j,n,m,grid1,grid2);
+        ans&=dfs(i,j-1,n,m,grid1,grid2);
+        return ans;
     }
     int countSubIslands(vector<vector<int>>& grid1, vector<vector<int>>& grid2) {
         int i=0,j=0,n,m;
@@ -35,9 +37,7 @@ public:
             {
                 if(grid2[i][j]==1)
                 {
-                      bool ok=true;
-                      dfs(i,j,n,m,grid1,grid2,ok);
-                        if(ok)
+                      if(dfs(i,j,n,m,grid1,grid2))
                         c++;
                 }
             }
