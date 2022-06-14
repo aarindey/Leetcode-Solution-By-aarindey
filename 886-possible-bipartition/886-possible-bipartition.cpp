@@ -1,28 +1,35 @@
 class Solution {
 public:
-    bool dfs(vector<vector<int>> &graph,vector<int> &v,int i)
-    {
+     bool bfs(vector<vector<int>> &graph,vector<int> &v,int i)
+     {
         int n=graph.size();
-        if(i==n)
-        return true;
-        int color=v[i];
-        bool ok=true;
-        for(int j=0;j<graph[i].size();j++)
+        queue<int> q;
+        q.push(i);
+        v[i]=0;
+        int colour=0;
+        
+        while(!q.empty())
         {
-            if(v[graph[i][j]]==-1)
+            int curr=q.front();
+            int color=v[curr];
+            q.pop();
+            for(auto x:graph[curr])
             {
-                v[graph[i][j]]=1-color;
-                ok&=dfs(graph,v,graph[i][j]);
-            }
-            else
-            {
-               if(v[graph[i][j]]==color)
-               {
-                   return false;
-               }
+                if(v[x]!=-1)
+                {
+                    if(v[x]==color)
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    v[x]=1-color;
+                    q.push(x);
+                }
             }
         }
-        return ok;
+        return true;
     }
     bool possibleBipartition(int n, vector<vector<int>>& dislikes) {
         vector<vector<int>> adj(n+1);
@@ -38,7 +45,7 @@ public:
             if(v[i]==-1)
             {
                 v[i]=0;
-                ok&=dfs(adj,v,i);
+                ok&=bfs(adj,v,i);
             }
         }
         return ok;
