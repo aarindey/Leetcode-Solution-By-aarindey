@@ -52,7 +52,21 @@ public:
         vector<bool> ans;
         for(int i=0;i<q.size();i++)
         {
-                ans.push_back(matrix[q[i][0]][q[i][1]]);
+            int u,v;
+            u=q[i][0];
+            v=q[i][1];
+            if(!matrix[u][v])
+            {
+                ans.push_back(matrix[u][v]);
+            }
+            else if(mp[u]>mp[v])
+            {
+                ans.push_back(false);
+            }
+            else
+            {
+                ans.push_back(true);
+            }
         }
         return ans;
         
