@@ -12,13 +12,11 @@ public:
         sort(courses.begin(),courses.end(),comp);
         int prev=0;
         int n=courses.size();
-        int ans=0;
         priority_queue<int> dur;
         for(int i=0;i<n;i++)
         {
             if(prev+courses[i][0]<=courses[i][1])
             {
-                ans++;
                 dur.push(courses[i][0]);
                 prev+=courses[i][0];
             }
@@ -31,6 +29,6 @@ public:
                 prev+=courses[i][0];
             }  
         }
-        return ans;
+        return dur.size();
     }
 };
