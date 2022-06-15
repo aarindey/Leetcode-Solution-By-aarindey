@@ -23,12 +23,10 @@ public:
         int n=graph.size();
         vector<bool> vis(n,false); 
         vector<bool> dfsvis(n,false);
-        vector<bool> pos(n,false);
         // vector<int> topo;
         vector<int> ans;
         for(int i=0;i<n;i++)
         {
-            
                 if(!dfs(graph,vis,dfsvis,i))
                 {
                    //ans.push_back(i); 
