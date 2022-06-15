@@ -31,6 +31,6 @@ public:
                 prev+=courses[i][0];
             }  
         }
-        return dur.size();
+        return ans;
     }
 };
