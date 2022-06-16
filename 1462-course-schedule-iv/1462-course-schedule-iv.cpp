@@ -50,6 +50,5 @@ public:
                 ans.push_back(matrix[q[i][0]][q[i][1]]);
         }
         return ans;
-        
     }
 };
