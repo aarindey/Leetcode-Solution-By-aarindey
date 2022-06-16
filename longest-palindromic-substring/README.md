@@ -1,3 +1,4 @@
+[Discussion Post (created on 16/5/2022 at 14:18)](https://leetcode.com/problems/longest-palindromic-substring/discuss/2157988/C%2B%2B-oror-DP-oror-Expand-From-Center)  
 <h2>5. Longest Palindromic Substring</h2><h3>Medium</h3><hr><div><p>Given a string <code>s</code>, return&nbsp;<em>the longest palindromic substring</em> in <code>s</code>.</p>
 
 <p>&nbsp;</p>
