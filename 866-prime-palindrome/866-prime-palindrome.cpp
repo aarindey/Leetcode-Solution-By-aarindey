@@ -1,16 +1,7 @@
+#define ll long long int
 class Solution {
 public:
-
-bool isprime(int n)
-{
-    if(n==1)
-        return false;
-    for(int i=2;i*i<=n;i++)
-        if(n%i==0)
-            return false;
-    return true;
-}
-bool ispalindrom(int n)
+bool ispalin(int n)
 {
     int n1=n;
     int n2=0;
@@ -23,20 +14,30 @@ bool ispalindrom(int n)
         return true;
     return false;
 }
-int smallestno(int n)
-{
-    if(ispalindrom(n))
-        if(isprime(n))
-            return n;
-    return smallestno(n+1);
-}
-
-int primePalindrome(int n) {
-    
-    if (1e7 <= n && n <= 1e8)
+    bool sieve(int n)
+    {
+        if(n==1)
+        return false;
+        for(ll i=2;i*i<=n;i++)
+        {
+            if(n%i==0)
+            return false;
+        }
+        return true;
+    }
+    int primePalindrome(int n) {
+        if (99899*1e2 <= n && n <= 1e8)
         return 100030001;
-    int a=smallestno(n);
-    return a;
-    
-}
+        for(int j=n;j<1e8;j++)
+        {
+           if(sieve(j))
+          {
+               if(ispalin(j))
+               {
+                    return j;
+               }
+           }
+        }
+        return 0;
+    }
 };
