@@ -1,19 +1,21 @@
 #define ll long long int
 class Solution {
 public:
-bool ispalin(int n)
-{
-    int n1=n;
-    int n2=0;
-    while(n1>0){
-        int a=n1%10;
-        n2=n2*10+a;
-        n1/=10;
-    }
-    if(n2==n)
+    bool ispalin(int z)
+    {
+        string s=to_string(z);
+        int i=0,j=s.length()-1;
+        while(i<j)
+        {
+            if(s[i]!=s[j])
+            {
+                return false;
+            }
+            i++;
+            j--;
+        }
         return true;
-    return false;
-}
+    }
     bool sieve(int n)
     {
         if(n==1)
