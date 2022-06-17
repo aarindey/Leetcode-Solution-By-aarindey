@@ -53,10 +53,6 @@ public:
                 ans+=rowCount[i];
             }
         }
-        for(int i=0;i<n;i++)
-        {
-            cout<<colCommon[i]<<endl;
-        }
         for(int j=0;j<n;j++)
         {
             if(colCount[j]>1)
