@@ -53,15 +53,14 @@ public:
         for(int i=0;i<n;i++)
         {
             int x=findParent(i,parent);
-                if(store[x].find(t[i])!=store[x].end()&&store[x][t[i]]>0)
-                {
-                    store[x][t[i]]--;
-                }
-                else
-                {
-                    hammingDis++;
-                }
-            
+            if(store[x].find(t[i])!=store[x].end()&&store[x][t[i]]>0)
+            {
+               store[x][t[i]]--;
+            }
+            else
+            {
+                hammingDis++;
+            }
         }
         return hammingDis;
     }
