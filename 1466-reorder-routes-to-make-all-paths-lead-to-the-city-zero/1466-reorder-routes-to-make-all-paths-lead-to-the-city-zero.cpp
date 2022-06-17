@@ -1,41 +1,28 @@
 class Solution {
 public:
+    void dfs(int node,vector<vector<int>> &graph,vector<vector<int>> &ungraph,vector<int>&vis,int &cnt){
+        vis[node]=1;
+        for(auto &it  : graph[node]){
+            if(!vis[it])
+                cnt++;
+        }
+        for(auto &it : ungraph[node]){
+            if(!vis[it]){
+                dfs(it,graph,ungraph,vis,cnt);
+            }
+        }
+    }
     int minReorder(int n, vector<vector<int>>& connections) {
-        int ans=0;
-        vector<int> graphf[n];
-        vector<int> graphb[n];
-        // vector<vector<bool>> matrix(n,vector<bool>(n,false));
-        queue<int> q;
-        for(auto x:connections)
-        {
-            graphf[x[0]].push_back(x[1]);
-            graphb[x[1]].push_back(x[0]);
+        vector<vector<int>> ungraph(n);
+        vector<vector<int>> graph(n);
+        for(auto &it : connections){
+            ungraph[it[0]].push_back(it[1]);
+            ungraph[it[1]].push_back(it[0]);
+            graph[it[0]].push_back(it[1]);
         }
-        vector<bool> vis(n,false);
-        q.push(0);
-        vis[0]=true;
-        while(!q.empty())
-        {
-            int ele=q.front();
-            q.pop();
-            for(auto &x:graphf[ele])
-            {
-                if(!vis[x])
-                {
-                    ans++;
-                    q.push(x);
-                    vis[x]=true;
-                }
-            }
-            for(auto &y:graphb[ele])
-            {
-                if(vis[y]==false)
-                {
-                    q.push(y);
-                    vis[y]=true;
-                }
-            }
-        }
-        return ans;
+        vector<int> vis(n,0);
+        int cnt=0;
+        dfs(0,graph,ungraph,vis,cnt);
+        return cnt;
     }
 };
