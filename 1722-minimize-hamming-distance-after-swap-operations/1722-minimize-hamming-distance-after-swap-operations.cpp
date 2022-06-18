@@ -29,7 +29,7 @@ public:
     int minimumHammingDistance(vector<int>& s, vector<int>& t, vector<vector<int>>& as) {
         int n=s.size();
         vector<int> parent(n);
-        vector<int> rank(n,0);
+        vector<int> rank(n,1);
         for(int i=0;i<n;i++)
         {
             parent[i]=i;
