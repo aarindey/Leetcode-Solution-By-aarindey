@@ -15,18 +15,15 @@ public:
         if(x==y)
         return;
         
-        if(rank[x]<rank[y])
+        if(rank[x]<=rank[y])
         {
             parent[x]=y;
+            rank[y]++;
         }
         else if(rank[y]<rank[x])
         {
             parent[y]=x;
-        }
-        else
-        {
-            parent[x]=y;
-            rank[y]++;
+            rank[x]++;
         }
     }
     int minimumHammingDistance(vector<int>& s, vector<int>& t, vector<vector<int>>& as) {
@@ -53,13 +50,23 @@ public:
         for(int i=0;i<n;i++)
         {
             int x=findParent(i,parent);
-            if(store[x].find(t[i])!=store[x].end()&&store[x][t[i]]>0)
+            if(t[i]==s[i])
             {
-               store[x][t[i]]--;
+                if(store[x][t[i]]>0)
+                store[x][t[i]]--;
+                else
+                hammingDis++;
             }
             else
             {
-                hammingDis++;
+                if(store[x].find(t[i])!=store[x].end()&&store[x][t[i]]>0)
+                {
+                    store[x][t[i]]--;
+                }
+                else
+                {
+                    hammingDis++;
+                }
             }
         }
         return hammingDis;
