@@ -37,9 +37,6 @@ public:
         {
             for(int j=i+1;j<n;j++)
             {
-                if(i==j)
-                continue;
-                
                 if(stones[i][0]==stones[j][0]||stones[i][1]==stones[j][1])
                 {
                     int x=find(i,parent);
