@@ -1,27 +1,26 @@
+#define ll long long int
 class Solution {
 public:
     int mySqrt(int x) {
-        long long int min=0;
-        long long int max=x;
-        int ans=0;
-        
-        while(min<=max)
+        ll low=0;
+        ll high=x;
+        ll ans;
+        while(low<=high)
         {
-           long int mid=min+(max-min)/2;
-          long long int temp;
-            temp=mid*mid;
-            if(temp==x)
-                return mid;
-            else if(temp<x)
+            ll mid=low+(high-low)/2;
+            ll z=mid*mid;
+            if(z==x)
+            return mid;
+            else if(z<x)
             {
                 ans=mid;
-                min=mid+1;
+                low=mid+1;
             }
             else
             {
-                max=mid-1;
+                high=mid-1;
             }
         }
-        return ans;
+        return (int)ans;
     }
 };
