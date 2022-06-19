@@ -8,11 +8,12 @@ public:
             adj[edges[i][1]].push_back({edges[i][0],succProb[i]});
         }
         vector<double> dis(n,1e-5);
-        queue<pair<int,double>> q;
+        priority_queue<pair<int,double>> q;
         q.push({start,1});
+        dis[start]=1;
         while(!q.empty())
         {
-            pair<int,double> ele=q.front();
+            pair<int,double> ele=q.top();
             q.pop();
             double pro=ele.second;
             int node=ele.first;
