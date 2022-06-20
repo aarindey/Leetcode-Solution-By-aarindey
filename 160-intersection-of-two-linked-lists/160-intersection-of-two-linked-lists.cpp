@@ -24,7 +24,7 @@ public:
             n++;
             b=b->next;
         }
-          a=headA;
+        a=headA;
         b=headB;
         if(m>n)
         {
@@ -38,8 +38,8 @@ public:
             for(int i=0;i<n-m;i++)
             {
                 b=b->next;
-        }}
-      
+        }
+        }
         while(a!=b)
         {
            
@@ -47,7 +47,7 @@ public:
             b=b->next;
         }
         if(a==b)
-            return a;
+        return a;
        
         
         return NULL;
