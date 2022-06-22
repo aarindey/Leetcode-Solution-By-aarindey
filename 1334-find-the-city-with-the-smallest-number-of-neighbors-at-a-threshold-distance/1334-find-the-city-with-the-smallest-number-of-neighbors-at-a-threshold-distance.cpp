@@ -40,18 +40,15 @@ public:
             }
         }
         int freq=INT_MAX;
+        int ans;
         for(auto &pr:mp)
         {
-            freq=min(pr.second,freq);
-        }
-        int ans=0;
-        for(auto &pr:mp)
-        {
-            if(pr.second==freq)
+            if(pr.second<=freq)
             {
-                ans=max(ans,pr.first);
+                freq=pr.second;
+                ans=pr.first;
             }
-        }
+        }       
         return ans;
     }
 };
