@@ -33,10 +33,13 @@ public:
         vector<vector<int>> ans;
         int z=edges.size();
         vector<bool> isPartOfMST(z,false);
+        
+        //Pushing the indexes of each edges
         for(int i=0;i<z;i++)
         {
             edges[i].push_back(i);
         }
+        //sorting wrt cost
         sort(edges.begin(),edges.end(),comp);
         vector<int> parent(n),rank(n,0);
         for(int i=0;i<n;i++)
@@ -57,6 +60,7 @@ public:
                 c++;
             }
         }
+        // cout<<size<<endl;
         vector<int> v;
         for(int i=0;i<z;i++)
         {
@@ -85,6 +89,7 @@ public:
                     temp[edges[j][3]]=true;
                 }
             }
+            cout<<sz<<endl;
             if(sz==size)
             {
                 for(int k=0;k<z;k++)
@@ -98,6 +103,7 @@ public:
                 v.push_back(edges[i][3]);
             }
         }
+        
         vector<int> pseudo;
         for(int i=0;i<z;i++)
         {
