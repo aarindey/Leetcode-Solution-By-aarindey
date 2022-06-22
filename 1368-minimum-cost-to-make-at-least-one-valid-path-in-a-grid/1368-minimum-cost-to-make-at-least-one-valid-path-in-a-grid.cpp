@@ -2,12 +2,7 @@
 public:
     int n,m;
 	bool isValid(vector<vector<int>>& grid,int new_x,int new_y,int x,int y)
-    {
-        // R L D U
-        //2 2 2 
-        //2 2 2
-        // new_x =1 new_y=0
-        
+    {  
         if(grid[x][y] == 1 && new_x == x && new_y == y+1)
             return true;
         if(grid[x][y] == 2 && new_x == x && new_y == y-1)
@@ -30,7 +25,6 @@ public:
             for(int j=0;j<m;j++)
             {
                 int num=i*m+j;
-                // cout<<num<<endl;
                 for(int k=0;k<4;k++)
                 {
                     int new_x,new_y;
@@ -39,33 +33,18 @@ public:
                     if(new_x>=0&&new_y>=0&&new_x<n&&new_y<m)
                     {
                         int num2=new_x*m+new_y;
-                        // cout<<num2<<endl;
                         if(isValid(grid,new_x,new_y,i,j))
                         {
                             adj[num].push_back({num2,0});
-                            // adj[num2].push_back({num,0});
                         }
                         else
                         {
                             adj[num].push_back({num2,1});
-                            // adj[num2].push_back({num,1});
                         }
-                        // vis[num2]=true;
-                        // vis[num]=true;
                     }
                 }
             }
         }
-            // for(int i=0;i<m*n;i++)
-            // {
-            //     cout<<i<<endl;
-            //     for(int j=0;j<adj[i].size();j++)
-            //     {
-            //         cout<<adj[i][j].first<<" "<<adj[i][j].second<<endl;
-            //     }
-            //     cout<<endl;
-            //     cout<<endl;
-            // }
         vector<int> dis(m*n,INT_MAX);
         priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>> pq;
         pq.push({0,0});
