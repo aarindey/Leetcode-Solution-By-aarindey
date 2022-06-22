@@ -1,26 +1,5 @@
 class Solution {
 public:
-    int bfs(vector<vector<int>> &adj,int &node)
-    {
-        queue<int> q;
-        q.push(node);
-        int level=0;
-        while(!q.empty())
-        {
-            int sz=q.size();
-            while(sz--)
-            {
-                int ele=q.front();
-                q.pop();
-                for(auto &z:adj[ele])
-                {
-                    q.push(z);
-                }
-            }
-            level++;
-        }
-        return level; 
-    }
     int longestIncreasingPath(vector<vector<int>>& matrix) {
         int n=matrix.size();
         int m=matrix[0].size();
