@@ -30,15 +30,11 @@ public:
         }
         queue<int> q;
         int ans=0;
-        for(int i=0;i<n;i++)
+        for(int i=0;i<n*m;i++)
         {
-            for(int j=0;j<m;j++)
+            if(indegree[i]==0)
             {
-                int node=i*m+j;
-                if(indegree[node]==0)
-                {
-                    q.push(node);
-                }
+                q.push(i);
             }
         }
         int level=0;
