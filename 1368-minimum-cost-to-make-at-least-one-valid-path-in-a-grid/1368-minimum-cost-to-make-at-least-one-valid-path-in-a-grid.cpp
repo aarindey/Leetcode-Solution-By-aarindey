@@ -46,20 +46,27 @@ public:
             }
         }
         vector<int> dis(m*n,INT_MAX);
-        priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>> pq;
-        pq.push({0,0});
+        deque<pair<int,int>> dq;
+        dq.push_back({0,0});
         dis[0]=0;
-        while(!pq.empty())
+        while(!dq.empty())
         {
-            pair<int,int> ele=pq.top();
-            pq.pop();
+            pair<int,int> ele=dq.front();
+            dq.pop_front();
             int dist=ele.first;
             for(auto &x:adj[ele.second])
             {
                 if(dis[x.first]>dist+x.second)
-                {
-                    dis[x.first]=dist+x.second;
-                    pq.push({dist+x.second,x.first});
+                {   
+                     dis[x.first]=dist+x.second;
+                     if(x.second==0)
+                     {
+                        dq.push_front({dist+x.second,x.first});
+                     }
+                     else
+                     {
+                        dq.push_back({dist+x.second,x.first});
+                     }
                 }
             }
         }
