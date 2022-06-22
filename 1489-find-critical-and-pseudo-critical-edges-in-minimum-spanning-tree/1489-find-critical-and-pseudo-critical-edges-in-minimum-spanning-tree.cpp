@@ -48,6 +48,7 @@ public:
         }
         int c=0;
         int size=0;
+        // Making the First MST
         for(int i=0;i<z;i++)
         {
             if(c==n-1)
@@ -60,6 +61,7 @@ public:
                 c++;
             }
         }
+        //Storing the cost of the MST in size
         // cout<<size<<endl;
         vector<int> v;
         for(int i=0;i<z;i++)
@@ -75,6 +77,7 @@ public:
             vector<bool> temp(z,false);
             for(int j=0;j<z;j++)
             {
+                // Applying Kruskal's Algo while not considering the ith edge
                 if(i==j)
                 {
                     continue;
@@ -87,11 +90,13 @@ public:
                     sz+=edges[j][2];
                     c++;
                     temp[edges[j][3]]=true;
+                    // Using temp to find all those edges which are part of at least one MST
                 }
             }
-            cout<<sz<<endl;
+            // cout<<sz<<endl;
             if(sz==size)
             {
+                // if(sz==size)
                 for(int k=0;k<z;k++)
                 {
                     if(temp[k])
@@ -100,15 +105,17 @@ public:
             }
             else
             {
+                // v stores the indices of the critical edges
                 v.push_back(edges[i][3]);
             }
         }
-        
+        // pseudo stores the pseudo critical edges
         vector<int> pseudo;
         for(int i=0;i<z;i++)
         {
             if(!isPartOfMST[edges[i][3]])
             {
+                // Making MSTs considering those edges which are still not part of some MST. To include all those cases which might have missed otherwise
                 vector<int> pa(n),r(n,0);
             
                 for(int i=0;i<n;i++)
@@ -134,6 +141,7 @@ public:
                 }
                 if(sz==size)
                 {
+                    //We include those cases as pseudo critcal considering which we can build a ST with size equal to MST
                     pseudo.push_back(edges[i][3]);
                 }
             }
@@ -141,6 +149,7 @@ public:
         ans.push_back(v);
         for(int i=0;i<v.size();i++)
         {
+            // All critical edges aren't pseudocritical edges so we turn those false, here
             isPartOfMST[v[i]]=false;
         }
         
@@ -148,6 +157,7 @@ public:
         {
             if(isPartOfMST[i])
             {
+                //all edges which are part of MST but are not critical are actually pseudo critical edges
                 pseudo.push_back(i);
             }
         }
