@@ -2,6 +2,7 @@ class Solution {
 public:
     bool static comp(vector<int> &a,vector<int> &b)
     {
+        //Comp which sorts the edges based on their weight
         return a[2]<b[2];
     }
     void join(int i,int j,vector<int> &parent,vector<int> &rank)
