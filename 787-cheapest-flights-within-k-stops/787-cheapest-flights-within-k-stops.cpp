@@ -1,28 +1,18 @@
 class Solution {
 public:
-    int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
-        vector<vector<pair<int,int>>> adj(n);
-        for(auto &f:flights)
-        {
-            adj[f[0]].push_back({f[1],f[2]});
+    //bellman ford.
+    //just run it k+1 iterations.
+    int findCheapestPrice(int n, vector<vector<int>>& a, int src, int sink, int k) {
+        
+        vector<int> c(n, 1e8);
+        c[src] = 0;
+        
+        for(int z=0; z<=k; z++){
+            vector<int> C(c);
+            for(auto e: a)
+                C[e[1]] = min(C[e[1]], c[e[0]] + e[2]);
+            c = C;
         }
-        set<vector<int>> pq;
-        pq.insert({0,src,k+1});
-        while(!pq.empty())
-        {
-            vector<int> ele=*pq.begin();
-            pq.erase(pq.begin());
-            int price=ele[0];
-            int node=ele[1];
-            int stops=ele[2];
-            if(node==dst&&stops>=0)
-            return price;
-            for(auto &x:adj[node])
-            {
-                if(stops>0)
-                pq.insert({price+x.second,x.first,stops-1});
-            }
-        }
-        return -1;
+        return c[sink] == 1e8 ? -1 : c[sink];
     }
 };
