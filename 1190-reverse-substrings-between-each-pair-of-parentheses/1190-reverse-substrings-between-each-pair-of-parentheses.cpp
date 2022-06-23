@@ -16,12 +16,12 @@ public:
                 reverse(s.begin()+low+1,s.begin()+high);
             }
         }
-        string ans;
+        string ans="";
         for(char &c:s)
         {
             if(c!='('&&c!=')')
             {
-                ans.push_back(c);
+                ans+=c;
             }
         }
         return ans;
