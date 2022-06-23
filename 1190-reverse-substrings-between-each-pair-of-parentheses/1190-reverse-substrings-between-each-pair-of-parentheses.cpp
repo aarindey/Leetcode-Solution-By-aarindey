@@ -21,7 +21,7 @@ public:
         {
             if(c!='('&&c!=')')
             {
-                ans+=c;
+                ans=ans+c;
             }
         }
         return ans;
