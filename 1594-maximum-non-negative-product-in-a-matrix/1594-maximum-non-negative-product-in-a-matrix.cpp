@@ -16,14 +16,14 @@ public:
         {
             dp[0][i].first=dp[0][i].second=dp[0][i-1].first*grid[0][i];
         }
-        if(n==1)
-        {
-            return (dp[0][m-1].first<0)?-1:dp[0][m-1].first%mod;
-        }
-        if(m==1)
-        {
-            return (dp[n-1][0].first<0)?-1:dp[n-1][0].first%mod;
-        }
+        // if(n==1)
+        // {
+        //     return (dp[0][m-1].first<0)?-1:dp[0][m-1].first%mod;
+        // }
+        // if(m==1)
+        // {
+        //     return (dp[n-1][0].first<0)?-1:dp[n-1][0].first%mod;
+        // }
         // first -> max     second->min
         for(ll i=1;i<n;i++)
         {
