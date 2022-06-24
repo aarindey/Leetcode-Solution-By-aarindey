@@ -24,7 +24,14 @@ public:
             }
             for(ll j=0;j<m;j++)
             {
-                dp[i][j]=max(points[i][j]+j+post[j],points[i][j]-j+pre[j]);
+                if(pre[j]-j>post[j]+j)
+                {
+                    dp[i][j]=points[i][j]-j+pre[j];
+                }
+                else
+                {
+                    dp[i][j]=points[i][j]+j+post[j];
+                }
             }
         }
         ll ans=0;
