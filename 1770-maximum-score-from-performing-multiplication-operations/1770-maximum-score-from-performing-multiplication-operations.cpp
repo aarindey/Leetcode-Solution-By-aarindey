@@ -1,29 +1,22 @@
 class Solution {
 public:
-    
- 
-    vector<vector<int>>dp;
-    int recurs(vector<int>& n, vector<int>& m,int i,int k)
+    vector<vector<int>> dp;
+    int n,m;
+    int recurse(int i,int m,int start,vector<int> &nums,vector<int> &mul)
     {
-        
-        if(k>=m.size())
-        {
-            return 0;
-        }
-           
-        if(dp[i][k]!=INT_MAX)
-        {
-            return  dp[i][k];
-        }
-        
-        int j=n.size()-(k-i)-1;
-        int a= max( recurs(n,m,i+1,k+1)+(n[i]*m[k]),recurs(n,m,i,k+1)+(n[j]*m[k]));
-        return dp[i][k]=a;
-        
+        if(i==n)
+        return 0;
+        if(dp[start][i]!=INT_MAX)
+        return dp[start][i];
+        int left,right;
+        int end=m-(i-start)-1;
+        return dp[start][i]=max(nums[start]*mul[i]+recurse(i+1,m,start+1,nums,mul),nums[end]*mul[i]+recurse(i+1,m,start,nums,mul));
     }
-    
-    int maximumScore(vector<int>& nums, vector<int>& m) {
-        dp.resize(m.size()+1,vector<int>(m.size()+1,INT_MAX));
-        return recurs(nums,m,0,0);
+    int maximumScore(vector<int>& nums, vector<int>& mul) {
+        n=mul.size();
+        m=nums.size();
+        dp.resize(1001,vector<int>(1001,INT_MAX));
+        int ans=recurse(0,m,0,nums,mul);
+        return ans;
     }
 };
