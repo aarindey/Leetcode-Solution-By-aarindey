@@ -27,6 +27,8 @@ public:
                     for(int j=0;j<26;j++)
                     {
                         char ch='a'+j;
+                        if(temp[i]==ch)
+                        continue;
                         temp[i]=ch;
                         if(store.find(temp)!=store.end())
                         {
