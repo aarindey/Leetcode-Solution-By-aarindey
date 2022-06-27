@@ -1,31 +1,22 @@
+long long mod=1e9+7;
 class Solution {
 public:
-    int func(vector<int> &nums,int target,int n,vector<int> &dp)
-    {
-        if(target==0)
-        {
-            return 1;
-        }
-        if(target<0)
-        {
-            return 0;
-        }
-        if(dp[target]!=-1)
-        {
-            return dp[target];
-        }
-        
-        int ans=0;
-        for(int j=0;j<n;j++)
-        {
-            if(target>=nums[j])
-            ans+=func(nums,target-nums[j],n,dp);
-        }
-        return dp[target]=ans;
-    }
     int combinationSum4(vector<int>& nums, int target) {
+        vector<long long> dp(target+1);
+        dp[0]=1;
         int n=nums.size();
-        vector<int> dp(target+1,-1);
-        return func(nums,target,n,dp);
+        for(int i=1;i<=target;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                if(i-nums[j]>=0)
+                {
+                    dp[i]+=dp[i-nums[j]];
+                    if(dp[i]>INT_MAX)
+                    dp[i]=dp[i]%mod;
+                }
+            }
+        }
+        return dp[target];
     }
 };
