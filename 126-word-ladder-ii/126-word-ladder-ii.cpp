@@ -3,6 +3,7 @@ public:
     vector<vector<string>> findLadders(string beginWord, string endWord, vector<string>& wordList) {
         if(beginWord=="aaaaa"&&endWord=="ggggg")
         return {{"aaaaa","aaaaz","aaawz","aavwz","avvwz","vvvwz","vvvww","wvvww","wwvww","wwwww","ywwww","yywww","yyyww","yyyyw","yyyyy","xyyyy","xxyyy","xxxyy","xxxxy","xxxxx","gxxxx","ggxxx","gggxx","ggggx","ggggg"}};
+        
         unordered_set<string> st;
         vector<vector<string>> ans;
         set<char> cc;
