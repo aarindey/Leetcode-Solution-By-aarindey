@@ -24,7 +24,7 @@ public:
             }
             if(disc[node]<low[v])
             {
-                bridge.push_back({v,node});
+                bridge.push_back({node,v});
             }
         }
     }
@@ -35,7 +35,7 @@ public:
             adj[con[0]].push_back(con[1]);
             adj[con[1]].push_back(con[0]);
         }
-        vector<int> par(n,-1),low(n,-1),disc(n,-1);
+        vector<int> par(n,INT_MAX),low(n,-1),disc(n,-1);
         vector<vector<int>> bridge;
         for(int i=0;i<n;i++)
         {
