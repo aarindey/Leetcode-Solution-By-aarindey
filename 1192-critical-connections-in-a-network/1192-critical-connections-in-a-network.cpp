@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void dfs(vector<vector<int>> &adj,int node,vector<int> &par,vector<int> &low,vector<int> &disc,vector<vector<int>> &bridge)
+    void dfs(vector<vector<int>> &adj,int &node,vector<int> &par,vector<int> &low,vector<int> &disc,vector<vector<int>> &bridge)
     {
         static int time=0;
         
