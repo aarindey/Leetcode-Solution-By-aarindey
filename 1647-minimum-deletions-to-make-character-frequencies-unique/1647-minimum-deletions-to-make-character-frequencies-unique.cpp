@@ -1,8 +1,8 @@
 class Solution {
 public:
     int minDeletions(string s) {
-        map<char,int> mp1;
-        map<int,int> mp2;
+        unordered_map<char,int> mp1;
+        unordered_map<int,int> mp2;
         for(char &ch:s)
         {
             mp1[ch]++;
