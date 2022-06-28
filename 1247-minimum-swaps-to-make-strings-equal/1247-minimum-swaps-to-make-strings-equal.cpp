@@ -17,6 +17,11 @@ public:
         if((xy+yx)%2!=0)
         return -1;
         
-        return xy/2+yx/2+(xy%2)*2;
+        int ans=xy/2+yx/2;
+        if(xy%2!=0)
+        {
+            ans+=2;
+        }
+        return ans;
     }
 };
