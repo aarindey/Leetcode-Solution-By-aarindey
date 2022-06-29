@@ -1,11 +1,12 @@
+#define ll long long int
 class Solution {
 public:
-    bool isPossible(vector<int>& piles,int speed,int h)
+    bool isPossible(vector<int>& piles,ll speed,ll h)
     {
-        int time=0;
+        ll time=0;
         for(int b:piles)
         {
-            time+=(b/speed);
+            time+=(((ll)b/speed));
             if(b%speed)
             time++;
         }
@@ -14,7 +15,7 @@ public:
     int minEatingSpeed(vector<int>& piles, int h){
      int low=1;
      int high=*max_element(piles.begin(),piles.end());
-     int ans=high;
+     ll ans=high;
         if(piles.size()>h)
         return -1;
         if(piles.size()==h)
@@ -22,7 +23,7 @@ public:
 
         while(low<=high)
         {
-        int mid=low+(high-low)/2;
+        ll mid=low+(high-low)/2;
         if(isPossible(piles,mid,h))
         {
             ans=mid;
@@ -33,6 +34,6 @@ public:
             low=mid+1;
         }
         }
-    return ans;
+    return (int)ans;
     }
 };
