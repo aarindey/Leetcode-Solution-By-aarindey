@@ -18,7 +18,7 @@ public:
     int minCost(int n, vector<int>& cuts) {
         int c=cuts.size();
         cuts.push_back(n);
-        cuts.push_back(0);
+        cuts.insert(cuts.begin(),0);
         sort(cuts.begin(),cuts.end());
         vector<vector<int>> dp(c+1,vector<int>(c+1,-1));
         return fun(1,c,cuts,dp);
