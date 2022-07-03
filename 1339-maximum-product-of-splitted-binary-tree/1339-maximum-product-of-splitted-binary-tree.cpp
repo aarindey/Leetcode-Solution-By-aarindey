@@ -13,43 +13,29 @@
 ll mod=1e9+7;
 class Solution {
 public:
-    int findNodeSum(TreeNode* root)
+    ll ans=0;
+    ll total;
+    ll totalSum(TreeNode* root)
     {
         if(root==NULL)
         return 0;
-        int sum=root->val;
-        int l=findNodeSum(root->left);
-        int r=findNodeSum(root->right);
-        sum+=(l+r);
-        root->val=sum;
-        return sum;
+        ll l=totalSum(root->left);
+        ll r=totalSum(root->right);
+        return l+r+root->val;
+    }
+    ll calculateMaxi(TreeNode *root)
+    {
+        if(root==NULL)
+        return 0;
+        ll l=calculateMaxi(root->left);
+        ll r=calculateMaxi(root->right);
+        ll lowerSum=l+r+root->val;
+        ans=max(ans,lowerSum*(1ll)*(total-lowerSum));
+        return lowerSum;
     }
     int maxProduct(TreeNode* root) {
-        int parSum=findNodeSum(root);
-        queue<TreeNode*> q;
-        q.push(root);
-        ll maxi=INT_MIN;
-        while(!q.empty())
-        {
-            TreeNode* ele=q.front();
-            q.pop();
-            
-            if(ele->left)
-            {
-                int lowerSum=ele->left->val;
-                int restSum=parSum-lowerSum;
-                maxi=max((ll)maxi,(ll)(restSum*(1ll)*lowerSum));
-                q.push(ele->left);
-            }
-            if(ele->right)
-            {
-                int lowerSum=ele->right->val;
-                int restSum=parSum-lowerSum;
-
-                maxi=max((ll)maxi,(ll)(restSum*(1ll)*lowerSum));
-                q.push(ele->right);
-            }
-        }
-        return maxi%mod;
+        total=totalSum(root);
+        calculateMaxi(root);
+        return ans%mod;
     }
 };
