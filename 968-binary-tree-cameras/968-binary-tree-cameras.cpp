@@ -11,31 +11,28 @@
  */
 class Solution {
 public:
-    int count=0;
-    int recurse(TreeNode* node)
+    int camera=0;
+    int fun(TreeNode* root)
     {
-        if(node==NULL)
+        if(root==NULL)
         {
             return 1;
         }
-        int l=recurse(node->left);
-        int r=recurse(node->right);
-        if(l==-1||r==-1)
+        int left=fun(root->left);
+        int right=fun(root->right);
+        if(left==-1||right==-1)
         {
-            count++;
+            camera++;
             return 0;
         }
-        if(l==0||r==0)
-        {
-            return 1;
-        }
+        if(left==0||right==0)
+        return 1;
+        
         return -1;
     }
     int minCameraCover(TreeNode* root) {
-        if(recurse(root)==-1)
-        {
-            count++;
-        }
-        return count;
+        if(fun(root)==-1)
+        camera++;
+        return camera;
     }
 };
