@@ -1,3 +1,4 @@
+[Discussion Post (created on 5/6/2022 at 9:5)](https://leetcode.com/problems/longest-consecutive-sequence/discuss/2239176/C%2B%2B-oror-Simple-Solution)  
 <h2>128. Longest Consecutive Sequence</h2><h3>Medium</h3><hr><div><p>Given an unsorted array of integers <code>nums</code>, return <em>the length of the longest consecutive elements sequence.</em></p>
 
 <p>You must write an algorithm that runs in&nbsp;<code>O(n)</code>&nbsp;time.</p>
