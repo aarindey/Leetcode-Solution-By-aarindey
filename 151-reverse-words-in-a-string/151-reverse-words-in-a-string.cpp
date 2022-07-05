@@ -26,15 +26,6 @@ public:
             }
             i--;
         }   
-        
-        // if(ans[ans.length()-1]==' ')
-        //     ans.pop_back();
-        //  if(ans[ans.length()-1]==' ')
-        //     ans.pop_back();
-        //  if(ans[ans.length()-1]==' ')
-        //     ans.pop_back();
-        //   if(ans[0]==' ')
-        //   ans=ans.substr(1,ans.length()-1);
         ans+=' ';
         ans+='x';
         vector<string> z;
