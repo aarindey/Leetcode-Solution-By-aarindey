@@ -18,8 +18,7 @@ public:
             if(num>=214748363)
             return false;
             num=num*10+(s[j]-'0');
-            if(num<0)
-            return false;
+
             long long last,lastlast;
             if(ans.size()>=2)
             {
