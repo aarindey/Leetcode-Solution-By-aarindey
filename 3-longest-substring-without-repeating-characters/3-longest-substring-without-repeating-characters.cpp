@@ -28,8 +28,3 @@ public:
         return ans;
     }
 };
-/*
-"nfpdmpi"
-out 4
-exp 5
-*/
