@@ -1,15 +1,5 @@
 class Solution {
 public:
-    bool repeatedState(int i,vector<int> side)
-    {
-        for(int j=0;j<i;j++)
-        {
-            if(side[j]==side[i])
-                return true;
-            
-        }
-        return false;
-    }
     bool helper(vector<int> &match,vector<int> &side,int i)
     {
         if(i==match.size())
@@ -21,7 +11,7 @@ public:
         }
         for(int j=0;j<4;j++)
         {
-            if(match[i]>side[j]||repeatedState(j,side))
+            if(match[i]>side[j])
             {
                 continue;
             }
