@@ -1,59 +1,39 @@
-/*
-// Definition for a Node.
-class Node {
-public:
-    int val;
-    vector<Node*> children;
-
-    Node() {}
-
-    Node(int _val) {
-        val = _val;
-    }
-
-    Node(int _val, vector<Node*> _children) {
-        val = _val;
-        children = _children;
-    }
-};
-*/
-
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
-    vector<vector<int>> v;
-    vector<int> temp;
+        vector<vector<int>> ans;
+        queue<TreeNode*> q;
         if(root==NULL)
-            return v;
-    queue<TreeNode*> q;
+        return ans;
         q.push(root);
-        q.push(NULL);
+        
         while(!q.empty())
         {
-            TreeNode* f=q.front();
-            q.pop();
-            if(f==NULL)
+            int sz=q.size();
+            vector<int> temp;
+            while(sz--)
             {
-                v.push_back(temp);
-                temp.clear();
-                if(!q.empty())
-                {
-                    q.push(NULL);
-                }
+                TreeNode* ele=q.front();
+                q.pop();
+                temp.push_back(ele->val);
+                if(ele->left)
+                q.push(ele->left);
+                if(ele->right)
+                q.push(ele->right);
             }
-            else
-            {
-                temp.push_back(f->val);
-                if(f->left)
-                {
-                q.push(f->left);
-                }
-                if(f->right)
-                {  
-                    q.push(f->right);
-                }
-            }
+            ans.push_back(temp);
         }
-    return v; 
+        return ans;
     }
 };
