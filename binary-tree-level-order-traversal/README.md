@@ -1,3 +1,4 @@
+[Discussion Post (created on 13/6/2022 at 6:16)](https://leetcode.com/problems/binary-tree-level-order-traversal/discuss/2274426/C%2B%2B-oror-Level-Order-Traversal-oror-BFS)  
 <h2>102. Binary Tree Level Order Traversal</h2><h3>Medium</h3><hr><div><p>Given the <code>root</code> of a binary tree, return <em>the level order traversal of its nodes' values</em>. (i.e., from left to right, level by level).</p>
 
 <p>&nbsp;</p>
