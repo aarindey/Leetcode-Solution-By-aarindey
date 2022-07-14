@@ -5,13 +5,9 @@ public:
         if(n==0)
         return 0;
         if(n==1)
-        {
-            return 1;
-        }
+        return 1;
         if(k==1)
-        {
-            return n;
-        }
+        return n;
         if(dp[k][n]!=-1)
         return dp[k][n];
         int ans=INT_MAX;
