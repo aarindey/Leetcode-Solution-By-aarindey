@@ -18,10 +18,10 @@ public:
             return false;
             ll new_ele=maxi%left_sum;
             sum=left_sum+new_ele;
-            if(new_ele>0)
-            pq.push(new_ele);
-            else
+            if(new_ele==0)
             pq.push(sum);
+            else
+            pq.push(new_ele);
         }
         return true;
     }
