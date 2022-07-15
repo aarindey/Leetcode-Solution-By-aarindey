@@ -13,7 +13,6 @@ public:
             left++;
             while(left<=right&&i<=products[right].size()&&products[right][i]!=ch)
             right--;
-            //cout<<"char "<<ch<<" "<<left<<" "<<right<<endl;
             vector<string> temp;
             int len=right-left+1;
             for(int k=left;k<min(left+3,left+len);k++)
