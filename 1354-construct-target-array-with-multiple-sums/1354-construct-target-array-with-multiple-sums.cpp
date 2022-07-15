@@ -9,7 +9,7 @@ public:
             pq.push(x);
             sum+=x;
         }
-        while(!pq.empty()&&pq.top()!=1)
+        while(pq.top()!=1)
         {
             ll maxi=pq.top();
             pq.pop();
@@ -23,8 +23,6 @@ public:
             else
             pq.push(sum);
         }
-        if(pq.empty())
-        return false;
         return true;
     }
 };
