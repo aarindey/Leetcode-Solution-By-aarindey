@@ -2,12 +2,12 @@
 class Solution {
 public:
     int nthMagicalNumber(int n, int a, int b) {
-        long long int l=1,r=2;
-        long long int lcm=(a*b)/__gcd(a,b);
-        long long mod=1e9+7;
+        ll l=1,r=2;
+        ll lcm=(a*b)/__gcd(a,b);
+        ll mod=1e9+7;
         while(true){
-            long long int n1=(l/a)+(l/b)-(l/lcm);
-            long long int n2=(r/a)+(r/b)-(r/lcm);
+            ll n1=(l/a)+(l/b)-(l/lcm);
+            ll n2=(r/a)+(r/b)-(r/lcm);
             if(n<=n2){
                 break; 
             }else{
@@ -17,8 +17,8 @@ public:
         }
         ll ans;
         while(l<=r){
-            long long int mid=l+(r-l)/2;
-            long long int num=(mid/a)+(mid/b)-(mid/lcm);
+            ll mid=l+(r-l)/2;
+            ll num=(mid/a)+(mid/b)-(mid/lcm);
             if(num==n){
                 ans=mid%mod;
                 r=mid-1;
