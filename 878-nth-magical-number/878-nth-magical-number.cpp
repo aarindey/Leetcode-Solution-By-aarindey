@@ -1,3 +1,4 @@
+#define ll long long int
 class Solution {
 public:
     int nthMagicalNumber(int n, int a, int b) {
@@ -14,12 +15,13 @@ public:
                 r=2*l;
             }
         }
-        
+        ll ans;
         while(l<=r){
             long long int mid=l+(r-l)/2;
             long long int num=(mid/a)+(mid/b)-(mid/lcm);
-            if(num==n && ((mid%a==0) || (mid%b==0))){
-                return mid%mod;
+            if(num==n){
+                ans=mid%mod;
+                r=mid-1;
             }   
             if(num>=n){
                 r=mid-1;
@@ -27,6 +29,8 @@ public:
                 l=mid+1;
             }
         }
+        if(ans!=0)
+        return ans;
         return -1;
         
     }
