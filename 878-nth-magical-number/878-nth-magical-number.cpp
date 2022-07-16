@@ -18,7 +18,7 @@ public:
         while(l<=r){
             long long int mid=l+(r-l)/2;
             long long int num=(mid/a)+(mid/b)-(mid/lcm);
-            if(num==n and ((mid%a==0) or (mid%b==0))){
+            if(num==n && ((mid%a==0) || (mid%b==0))){
                 return mid%mod;
             }   
             if(num>=n){
