@@ -3,7 +3,7 @@ public:
     int n;
     double fun(vector<int> &nums,int k,int i,int prev,vector<vector<double>> &dp)
     {
-        if(i==n&&k==1||i==n&&k==0)
+        if(i==n&&k==0)
         return 0;
         if(i>=n||k<=0)
         {
