@@ -24,10 +24,6 @@ public:
             {
                 three=true;
             }
-            if(mp[ranks[i]].size()==5)
-            {
-                flush=true;
-            }
         }
         if(flush)
         {
