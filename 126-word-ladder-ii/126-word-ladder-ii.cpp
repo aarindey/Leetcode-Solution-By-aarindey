@@ -1,79 +1,80 @@
 class Solution {
+private:
+    string target;
+    
 public:
+    void dfs(string current, int l, unordered_map<string,vector<string>> &g, vector<string> &run, vector<vector<string>> &output){
+        if (l == 0){
+            if (current == target)
+                output.push_back(run);
+            return;
+        }
+        for (auto i: g[current]){
+            run.push_back(i);
+            dfs(i,l-1,g,run,output);
+            run.pop_back();
+        }
+        return;
+    }
+    
     vector<vector<string>> findLadders(string beginWord, string endWord, vector<string>& wordList) {
-        if(beginWord=="aaaaa"&&endWord=="ggggg")
-        return {{"aaaaa","aaaaz","aaawz","aavwz","avvwz","vvvwz","vvvww","wvvww","wwvww","wwwww","ywwww","yywww","yyyww","yyyyw","yyyyy","xyyyy","xxyyy","xxxyy","xxxxy","xxxxx","gxxxx","ggxxx","gggxx","ggggx","ggggg"}};
-        
-        unordered_set<string> st;
-        vector<vector<string>> ans;
-        set<char> cc;
-        for(auto &w:wordList)
-        {
-            for(char &ch:w)
-            cc.insert(ch);
+        unordered_set<string> dict;
+        for (auto i: wordList){
+            dict.insert(i);
         }
-        for(string &x:wordList)
-        {
-            st.insert(x);
+        dict.insert(beginWord); target = beginWord;
+        if (dict.find(endWord) == dict.end()){
+            return {};
         }
-        if(st.find(endWord)==st.end())
-        return ans;
-        int n=beginWord.size();
-        unordered_set<string> visited;
-        queue<vector<string>> q;
-        q.push({beginWord});
-        visited.insert({beginWord});
-        int level=1;
-        while(!q.empty())
-        {
-            int sz=q.size();
-            while(sz--)
-            {
-                vector<string> ele=q.front();
-                string x=ele.back();
+        //directed adjancency list of words
+        unordered_map<string,vector<string>>paths;
+        queue<string> q;
+        q.push(beginWord);
+        int level = 0;
+        bool broke = false;
+        while(!q.empty()){
+            ++level;
+            int S = q.size();
+            for (int k = 0; k < S; ++k){
+                string s = q.front();
                 q.pop();
-                for(int i=0;i<n;i++)
-                {
-                    char c=x[i];
-                    for(auto &ch:cc)
-                    {
-                        if(c==ch)
-                        continue;
-                        x[i]=ch;
-
-                        if(st.find(x)==st.end())
-                        {
-                            continue;
-                        }
-                        if(x==endWord)
-                        {
-                                visited.insert(x);
-                                ele.push_back(x);
-                                ans.push_back(ele);
-                                ele.pop_back();
-                        }
-                        else
-                        {
-                                visited.insert(x);
-                                ele.push_back(x);
-                                q.push(ele);
-                                ele.pop_back();
+                if (dict.find(s) == dict.end()){
+                    continue;
+                }
+                dict.erase(s);
+                string t = s;
+                for (int i = 0; i < s.size(); ++i){
+                    char c = s[i];
+                    for (int j = 0; j < 26; ++j){
+                        s[i] = 'a' + j;
+                        if (dict.find(s) != dict.end()){
+                            q.push(s);
+                            paths[s].push_back(t);
+                            if (s == endWord){
+                                broke = true;
+                                goto breakpoint;
+                            }
                         }
                     }
-                    x[i]=c;
+                    s[i] = c;
                 }
+                breakpoint:;
             }
-            for(auto &x:visited)
-            {
-                st.erase(x);
-            }
-            level++;
-            visited.clear();
-            if(ans.size()!=0)
-            {
+            if (broke) {
                 break;
             }
         }
-        return ans;
+        //check to see whether any path was found using bfs
+        if (!broke){
+            return {};
+        }
+        vector<string> run = {endWord};
+        vector<vector<string>> output;
+        dfs(endWord,level,paths,run,output);
+        
+        for (auto &i:output) 
+        reverse(i.begin(),i.end());
+        
+        return output;
     }
 };
