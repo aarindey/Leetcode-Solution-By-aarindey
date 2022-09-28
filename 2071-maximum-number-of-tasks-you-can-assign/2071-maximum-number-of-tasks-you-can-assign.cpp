@@ -21,7 +21,6 @@ public:
         }
         return true;        
     }
-    
     int maxTaskAssign(vector<int>& tasks, vector<int>& workers, int pills, int strength) {
         sort(tasks.begin(), tasks.end());
         sort(workers.begin(), workers.end());
