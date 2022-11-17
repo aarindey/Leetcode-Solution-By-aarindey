@@ -4,8 +4,6 @@ class Solution {
 public:
      ll rec(int n,vector<ll>& dp)
     {
-        if(n==0) 
-        return 1;
         if(n<=0) 
         return 1;
          
